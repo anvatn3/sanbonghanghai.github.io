@@ -5,13 +5,17 @@
   }
 body {
     width: 100%;
-    height: 100vh;
+    height: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #2c3e50;
+    /* background-color: #2c3e50; */
+    background-image: url(https://sanconhantao.vn/wp-content/uploads/2021/03/ae4b582f18b6e5e8bca7.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 #head {
     width: 100%;
     height: 80px;
+    justify-content: center;
     background-image: linear-gradient(90deg, #3498db, #2ecc71, #3498db);
     position: sticky;
     top: 0;
@@ -70,35 +74,59 @@ ul.login-signup li a:hover {
     display: flex;
     justify-content: center;
     width: 80%;
-    background-color: #34495e;
+    background-color: #2c3e50;
     margin: 10px auto;
     padding: 30px 20px;
+    box-shadow: 0px 0px 15px 8px #000000; /* x y blur scale color  */
+    
 }
-.main-content {
-    width: 60%;
+.selection {
+    width: 600px;
+    height: 580px;
     background-color: #2ecc71;
-    padding: 30px 20px;
+    padding: 10px;
     margin-right: 5px;
+    margin-left: auto;
+    transition: all 0.25s ease-in-out;
+
+}
+.selection:hover {
+    box-shadow: 0px 0px 15px 8px #ffffff; /* x y blur scale color  */
+
 }
 .diagram {
     display: block;
-    width: 40%;
+    width: 450px;
     height: 580px;
     background-color: #3498db;
-    padding: 10px 10px;
+    padding: 10px;
     margin-left: 5px;
+    margin-right: auto;
+    transition: all 0.25s ease-in-out;
+
 }
-.head-diagram {
+.diagram:hover {
+    box-shadow: 0px 0px 15px 8px #ffffff; /* x y blur scale color  */
+
+}
+.head-diagram, .head-selection {
     width: 100%;
     height: 10%;
-    background-color: #2c3e50;
+    background-color: #34495e;
+    padding: 10px;
 }
-.main-diagram {
+.name-diagram, .name-selection {
+    text-align: center;
+    color: #ecf0f1;
+    font-size: 25px;
+    font-weight: 600;
+}
+.main-diagram, .main-selection {
     width: 100%;
     height: 80%;
     margin: 10px auto;
     display: flex;
-    background-color: #2c3e50;
+    background-color: #34495e;
 }
 .yard {
     display: block;
@@ -148,28 +176,36 @@ ul.login-signup li a:hover {
     color: #ecf0f1;
     font-size: 20px;
     font-weight: 600;
+    transition: all 0.1s ease-in-out;
+}
+.yard1:hover, .yard2:hover, .yard3:hover, .yard4:hover {
+    transform: scale(1.075);
+    color: #c0392b;
+    border: 2px solid #c0392b;
 }
 .iconball {
     font-size: 50px;
 }
 .stand {
     width: 15%;
-    height: 100px;
+    height: 50px;
     display: block;
     color: #ecf0f1;
     font-size: 15px;
     font-weight: 500;
     margin: auto 5px;
+    text-align: center;
 }
 .gate1 {
     width: 90%;
-    height: 10%;
+    height: 5%;
     display: block;
     color: #ecf0f1;
     font-size: 15px;
     font-weight: 500;
     direction: rtl;
     margin-right: 10px;
+    margin-top: 20px;
 }
 .gate2 {
     width: 15%;
@@ -179,5 +215,6 @@ ul.login-signup li a:hover {
     font-size: 15px;
     font-weight: 500;
     margin: auto 5px;
+    text-align: center;
 
 }
