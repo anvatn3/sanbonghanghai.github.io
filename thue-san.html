@@ -47,20 +47,397 @@
                 <div class="name-selection">Đặt Lịch</div>
             </div>
             <div class="main-selection">
-                <form action="" class="invoice-infor1">
+                <form action=""  class="invoice-infor1" >
                     <div class="head-form">Sân 1</div>
                     <label for="">Tên của bạn :</label>
                     
                     <span class="username">
                         <i class="fas fa-user"></i>
                         <input type="text" name="username" id="username" placeholder="Nhập tên" required>
-                    </span><br>
+                        <div class="line-user"></div>
+                    </span>
                     <label for="">Số điện thoại :</label>
                     
                     <span class="phonenumber">
                         <i class="fas fa-phone-alt"></i>
                         <input type="tel" name="tel" id="phonenumber" placeholder="Nhập số điện thoại" required>
-                    </span><br>
+                        <div class="line-phone"></div>
+                    </span>
+                    <label for="">Ngày thuê :</label><br>
+                    <div class="dmy">
+                        <i class="fas fa-calendar-alt"></i>
+                        <label for="">Ngày</label>
+                        <span class="day">
+                            <select name="day" id="">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                        </span>
+                        <label for="">Tháng</label>
+                        <span class="month">
+                            <select name="month" id="">
+                                <!-- <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option> -->
+                                <option value="4">4</option>
+                                <!-- <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option> -->
+                            </select>
+                        </span>
+                        <label for="">Năm</label>
+                        <span class="year">
+                            <select name="year" id="">
+                                <option value="2022">2022</option>
+                            </select>
+                        </span>
+                    </div><br>
+                    <label for="">Thời gian thuê :</label>
+                    <i class="fas fa-clock"></i>
+                    <label for="">Từ</label>
+                    <span class="timestart">
+                        <select name="timestart" id="">
+                            <!-- <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option> -->
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <!-- <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option> -->
+                        </select>
+                    </span>
+                    <label for="">giờ (đá trong vòng 1 tiếng)</label><br><br>
+                    <label for="">Lời nhắn :</label><br>
+                    <span class="message">
+                        <input type="text" id="message" placeholder="Nhập lời nhắn">
+                    </span>
+                    <div class="btn">
+                        <span class="reset">
+                            <button id="reset" type="reset">Đặt Lại</button>
+                        </span>
+                        <span class="submit">
+                            <input type="submit" value="Xác Nhận" name="" id="submit">
+                        </span>
+                    </div>
+                    
+                </form>
+                <form action=""  class="invoice-infor2" >
+                    <div class="head-form">Sân 2</div>
+                    <label for="">Tên của bạn :</label>
+                    
+                    <span class="username">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="username" id="username" placeholder="Nhập tên" required>
+                        <div class="line-user"></div>
+                    </span>
+                    <label for="">Số điện thoại :</label>
+                    
+                    <span class="phonenumber">
+                        <i class="fas fa-phone-alt"></i>
+                        <input type="tel" name="tel" id="phonenumber" placeholder="Nhập số điện thoại" required>
+                        <div class="line-phone"></div>
+                    </span>
+                    <label for="">Ngày thuê :</label><br>
+                    <div class="dmy">
+                        <i class="fas fa-calendar-alt"></i>
+                        <label for="">Ngày</label>
+                        <span class="day">
+                            <select name="day" id="">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                        </span>
+                        <label for="">Tháng</label>
+                        <span class="month">
+                            <select name="month" id="">
+                                <!-- <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option> -->
+                                <option value="4">4</option>
+                                <!-- <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option> -->
+                            </select>
+                        </span>
+                        <label for="">Năm</label>
+                        <span class="year">
+                            <select name="year" id="">
+                                <option value="2022">2022</option>
+                            </select>
+                        </span>
+                    </div><br>
+                    <label for="">Thời gian thuê :</label>
+                    <i class="fas fa-clock"></i>
+                    <label for="">Từ</label>
+                    <span class="timestart">
+                        <select name="timestart" id="">
+                            <!-- <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option> -->
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <!-- <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option> -->
+                        </select>
+                    </span>
+                    <label for="">giờ (đá trong vòng 1 tiếng)</label><br><br>
+                    <label for="">Lời nhắn :</label><br>
+                    <span class="message">
+                        <input type="text" id="message" placeholder="Nhập lời nhắn">
+                    </span>
+                    <div class="btn">
+                        <span class="reset">
+                            <button id="reset" type="reset">Đặt Lại</button>
+                        </span>
+                        <span class="submit">
+                            <input type="submit" value="Xác Nhận" name="" id="submit">
+                        </span>
+                    </div>
+                    
+                </form>
+                <form action=""  class="invoice-infor3" >
+                    <div class="head-form">Sân 3</div>
+                    <label for="">Tên của bạn :</label>
+                    
+                    <span class="username">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="username" id="username" placeholder="Nhập tên" required>
+                        <div class="line-user"></div>
+                    </span>
+                    <label for="">Số điện thoại :</label>
+                    
+                    <span class="phonenumber">
+                        <i class="fas fa-phone-alt"></i>
+                        <input type="tel" name="tel" id="phonenumber" placeholder="Nhập số điện thoại" required>
+                        <div class="line-phone"></div>
+                    </span>
+                    <label for="">Ngày thuê :</label><br>
+                    <div class="dmy">
+                        <i class="fas fa-calendar-alt"></i>
+                        <label for="">Ngày</label>
+                        <span class="day">
+                            <select name="day" id="">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                        </span>
+                        <label for="">Tháng</label>
+                        <span class="month">
+                            <select name="month" id="">
+                                <!-- <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option> -->
+                                <option value="4">4</option>
+                                <!-- <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option> -->
+                            </select>
+                        </span>
+                        <label for="">Năm</label>
+                        <span class="year">
+                            <select name="year" id="">
+                                <option value="2022">2022</option>
+                            </select>
+                        </span>
+                    </div><br>
+                    <label for="">Thời gian thuê :</label>
+                    <i class="fas fa-clock"></i>
+                    <label for="">Từ</label>
+                    <span class="timestart">
+                        <select name="timestart" id="">
+                            <!-- <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option> -->
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <!-- <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option> -->
+                        </select>
+                    </span>
+                    <label for="">giờ (đá trong vòng 1 tiếng)</label><br><br>
+                    <label for="">Lời nhắn :</label><br>
+                    <span class="message">
+                        <input type="text" id="message" placeholder="Nhập lời nhắn">
+                    </span>
+                    <div class="btn">
+                        <span class="reset">
+                            <button id="reset" type="reset">Đặt Lại</button>
+                        </span>
+                        <span class="submit">
+                            <input type="submit" value="Xác Nhận" name="" id="submit">
+                        </span>
+                    </div>
+                    
+                </form>
+                <form action=""  class="invoice-infor4" >
+                    <div class="head-form">Sân 4</div>
+                    <label for="">Tên của bạn :</label>
+                    
+                    <span class="username">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="username" id="username" placeholder="Nhập tên" required>
+                        <div class="line-user"></div>
+                    </span>
+                    <label for="">Số điện thoại :</label>
+                    
+                    <span class="phonenumber">
+                        <i class="fas fa-phone-alt"></i>
+                        <input type="tel" name="tel" id="phonenumber" placeholder="Nhập số điện thoại" required>
+                        <div class="line-phone"></div>
+                    </span>
                     <label for="">Ngày thuê :</label><br>
                     <div class="dmy">
                         <i class="fas fa-calendar-alt"></i>
@@ -223,5 +600,6 @@
 
         </div>
     </div>
+    <script src="thue-san.js"></script>
 </body>
 </html>
