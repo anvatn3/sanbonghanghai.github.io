@@ -47,21 +47,20 @@
                 <div class="name-selection">Đặt Lịch</div>
             </div>
             <div class="main-selection">
+                <!-- invoice-infor1 -->
                 <form action=""  class="invoice-infor1" >
                     <div class="head-form">Sân 1</div>
-                    <label for="">Tên của bạn :</label>
-                    
+                    <!-- Tên của bạn -->
                     <span class="username">
                         <i class="fas fa-user"></i>
                         <input type="text" name="username" id="username" placeholder="Nhập tên" required>
                         <div class="line-user"></div>
                     </span>
-                    <label for="">Số điện thoại :</label>
-                    
-                    <span class="phonenumber">
-                        <i class="fas fa-phone-alt"></i>
-                        <input type="tel" name="tel" id="phonenumber" placeholder="Nhập số điện thoại" required>
-                        <div class="line-phone"></div>
+                    <!-- ngày tháng năm sinh -->
+                    <span class="birthyear">
+                        <i class="fas fa-birthday-cake"></i>
+                        <input type="date" name="date" id="birthyear" required>
+                        <div class="line-birthyear"></div>
                     </span>
                     <label for="">Ngày thuê :</label><br>
                     <div class="dmy">
@@ -99,7 +98,7 @@
                                 <option value="28">28</option>
                                 <option value="29">29</option>
                                 <option value="30">30</option>
-                                <option value="31">31</option>
+                                <!-- <option value="31">31</option> -->
                             </select>
                         </span>
                         <label for="">Tháng</label>
@@ -126,11 +125,11 @@
                             </select>
                         </span>
                     </div><br>
-                    <label for="">Thời gian thuê :</label>
+                    <label for="">Thời gian thuê :</label> 
                     <i class="fas fa-clock"></i>
                     <label for="">Từ</label>
-                    <span class="timestart">
-                        <select name="timestart" id="">
+                    <span class="timestart" >
+                        <select onclick="priceChange1()" name="timestart" id="timestart1">
                             <!-- <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -141,30 +140,32 @@
                             <option value="8">8</option>
                             <option value="9">9</option>
                             <option value="10">10</option>
-                            <option value="11">11</option>
+                            <!-- <option value="11">11</option>
                             <option value="12">12</option>
-                            <option value="13">13</option>
+                            <option value="13">13</option> -->
                             <option value="14">14</option>
                             <option value="15">15</option>
                             <option value="16">16</option>
                             <option value="17">17</option>
                             <option value="18">18</option>
-                            <!-- <option value="19">19</option>
+                            <option value="19">19</option>
                             <option value="20">20</option>
                             <option value="21">21</option>
-                            <option value="22">22</option>
+                            <!-- <option value="22">22</option>
                             <option value="23">23</option>
                             <option value="24">24</option> -->
                         </select>
                     </span>
-                    <label for="">giờ (đá trong vòng 1 tiếng)</label><br><br>
+                    <label for="">giờ (đá trong vòng 1 tiếng)</label><br>
+                    <div class="price1">Giá : 400k VND</div>
                     <label for="">Lời nhắn :</label><br>
                     <span class="message">
                         <input type="text" id="message" placeholder="Nhập lời nhắn">
+                        <div class="line-message"></div>
                     </span>
                     <div class="btn">
                         <span class="reset">
-                            <button id="reset" type="reset">Đặt Lại</button>
+                            <button onclick="resetPrice()" id="reset" type="reset">Đặt Lại</button>
                         </span>
                         <span class="submit">
                             <input type="submit" value="Xác Nhận" name="" id="submit">
@@ -172,21 +173,20 @@
                     </div>
                     
                 </form>
+                <!-- invoice-infor2 -->
                 <form action=""  class="invoice-infor2" >
                     <div class="head-form">Sân 2</div>
-                    <label for="">Tên của bạn :</label>
-                    
+                    <!-- Tên của bạn -->
                     <span class="username">
                         <i class="fas fa-user"></i>
                         <input type="text" name="username" id="username" placeholder="Nhập tên" required>
                         <div class="line-user"></div>
                     </span>
-                    <label for="">Số điện thoại :</label>
-                    
-                    <span class="phonenumber">
-                        <i class="fas fa-phone-alt"></i>
-                        <input type="tel" name="tel" id="phonenumber" placeholder="Nhập số điện thoại" required>
-                        <div class="line-phone"></div>
+                    <!-- ngày tháng năm sinh -->
+                    <span class="birthyear">
+                        <i class="fas fa-birthday-cake"></i>
+                        <input type="date" name="date" id="birthyear" required>
+                        <div class="line-birthyear"></div>
                     </span>
                     <label for="">Ngày thuê :</label><br>
                     <div class="dmy">
@@ -224,7 +224,7 @@
                                 <option value="28">28</option>
                                 <option value="29">29</option>
                                 <option value="30">30</option>
-                                <option value="31">31</option>
+                                <!-- <option value="31">31</option> -->
                             </select>
                         </span>
                         <label for="">Tháng</label>
@@ -255,7 +255,7 @@
                     <i class="fas fa-clock"></i>
                     <label for="">Từ</label>
                     <span class="timestart">
-                        <select name="timestart" id="">
+                        <select onclick="priceChange2()" name="timestart" id="timestart2">
                             <!-- <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -266,30 +266,32 @@
                             <option value="8">8</option>
                             <option value="9">9</option>
                             <option value="10">10</option>
-                            <option value="11">11</option>
+                            <!-- <option value="11">11</option>
                             <option value="12">12</option>
-                            <option value="13">13</option>
+                            <option value="13">13</option> -->
                             <option value="14">14</option>
                             <option value="15">15</option>
                             <option value="16">16</option>
                             <option value="17">17</option>
                             <option value="18">18</option>
-                            <!-- <option value="19">19</option>
+                            <option value="19">19</option>
                             <option value="20">20</option>
                             <option value="21">21</option>
-                            <option value="22">22</option>
+                            <!-- <option value="22">22</option>
                             <option value="23">23</option>
                             <option value="24">24</option> -->
                         </select>
                     </span>
-                    <label for="">giờ (đá trong vòng 1 tiếng)</label><br><br>
+                    <label for="">giờ (đá trong vòng 1 tiếng)</label><br>
+                    <div class="price2">Giá : 400k VND</div>
                     <label for="">Lời nhắn :</label><br>
                     <span class="message">
                         <input type="text" id="message" placeholder="Nhập lời nhắn">
+                        <div class="line-message"></div>
                     </span>
                     <div class="btn">
                         <span class="reset">
-                            <button id="reset" type="reset">Đặt Lại</button>
+                            <button onclick="resetPrice()" id="reset" type="reset">Đặt Lại</button>
                         </span>
                         <span class="submit">
                             <input type="submit" value="Xác Nhận" name="" id="submit">
@@ -297,21 +299,20 @@
                     </div>
                     
                 </form>
+                <!-- invoice-infor3 -->
                 <form action=""  class="invoice-infor3" >
                     <div class="head-form">Sân 3</div>
-                    <label for="">Tên của bạn :</label>
-                    
+                    <!-- Tên của bạn -->
                     <span class="username">
                         <i class="fas fa-user"></i>
                         <input type="text" name="username" id="username" placeholder="Nhập tên" required>
                         <div class="line-user"></div>
                     </span>
-                    <label for="">Số điện thoại :</label>
-                    
-                    <span class="phonenumber">
-                        <i class="fas fa-phone-alt"></i>
-                        <input type="tel" name="tel" id="phonenumber" placeholder="Nhập số điện thoại" required>
-                        <div class="line-phone"></div>
+                    <!-- ngày tháng năm sinh -->
+                    <span class="birthyear">
+                        <i class="fas fa-birthday-cake"></i>
+                        <input type="date" name="date" id="birthyear" required>
+                        <div class="line-birthyear"></div>
                     </span>
                     <label for="">Ngày thuê :</label><br>
                     <div class="dmy">
@@ -349,7 +350,7 @@
                                 <option value="28">28</option>
                                 <option value="29">29</option>
                                 <option value="30">30</option>
-                                <option value="31">31</option>
+                                <!-- <option value="31">31</option> -->
                             </select>
                         </span>
                         <label for="">Tháng</label>
@@ -380,7 +381,7 @@
                     <i class="fas fa-clock"></i>
                     <label for="">Từ</label>
                     <span class="timestart">
-                        <select name="timestart" id="">
+                        <select onclick="priceChange3()" name="timestart" id="timestart3">
                             <!-- <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -391,30 +392,32 @@
                             <option value="8">8</option>
                             <option value="9">9</option>
                             <option value="10">10</option>
-                            <option value="11">11</option>
+                            <!-- <option value="11">11</option>
                             <option value="12">12</option>
-                            <option value="13">13</option>
+                            <option value="13">13</option> -->
                             <option value="14">14</option>
                             <option value="15">15</option>
                             <option value="16">16</option>
                             <option value="17">17</option>
                             <option value="18">18</option>
-                            <!-- <option value="19">19</option>
+                            <option value="19">19</option>
                             <option value="20">20</option>
                             <option value="21">21</option>
-                            <option value="22">22</option>
+                            <!-- <option value="22">22</option>
                             <option value="23">23</option>
                             <option value="24">24</option> -->
                         </select>
                     </span>
-                    <label for="">giờ (đá trong vòng 1 tiếng)</label><br><br>
+                    <label for="">giờ (đá trong vòng 1 tiếng)</label><br>
+                    <div class="price3">Giá : 400k VND</div>
                     <label for="">Lời nhắn :</label><br>
                     <span class="message">
                         <input type="text" id="message" placeholder="Nhập lời nhắn">
+                        <div class="line-message"></div>
                     </span>
                     <div class="btn">
                         <span class="reset">
-                            <button id="reset" type="reset">Đặt Lại</button>
+                            <button onclick="resetPrice()" id="reset" type="reset">Đặt Lại</button>
                         </span>
                         <span class="submit">
                             <input type="submit" value="Xác Nhận" name="" id="submit">
@@ -422,21 +425,20 @@
                     </div>
                     
                 </form>
+                <!-- invoice-infor4 -->
                 <form action=""  class="invoice-infor4" >
                     <div class="head-form">Sân 4</div>
-                    <label for="">Tên của bạn :</label>
-                    
+                    <!-- Tên của bạn -->
                     <span class="username">
                         <i class="fas fa-user"></i>
                         <input type="text" name="username" id="username" placeholder="Nhập tên" required>
                         <div class="line-user"></div>
                     </span>
-                    <label for="">Số điện thoại :</label>
-                    
-                    <span class="phonenumber">
-                        <i class="fas fa-phone-alt"></i>
-                        <input type="tel" name="tel" id="phonenumber" placeholder="Nhập số điện thoại" required>
-                        <div class="line-phone"></div>
+                    <!-- ngày tháng năm sinh -->
+                    <span class="birthyear">
+                        <i class="fas fa-birthday-cake"></i>
+                        <input type="date" name="date" id="birthyear" required>
+                        <div class="line-birthyear"></div>
                     </span>
                     <label for="">Ngày thuê :</label><br>
                     <div class="dmy">
@@ -474,7 +476,7 @@
                                 <option value="28">28</option>
                                 <option value="29">29</option>
                                 <option value="30">30</option>
-                                <option value="31">31</option>
+                                <!-- <option value="31">31</option> -->
                             </select>
                         </span>
                         <label for="">Tháng</label>
@@ -505,7 +507,7 @@
                     <i class="fas fa-clock"></i>
                     <label for="">Từ</label>
                     <span class="timestart">
-                        <select name="timestart" id="">
+                        <select onclick="priceChange4()" name="timestart" id="timestart4">
                             <!-- <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -516,30 +518,32 @@
                             <option value="8">8</option>
                             <option value="9">9</option>
                             <option value="10">10</option>
-                            <option value="11">11</option>
+                            <!-- <option value="11">11</option>
                             <option value="12">12</option>
-                            <option value="13">13</option>
+                            <option value="13">13</option> -->
                             <option value="14">14</option>
                             <option value="15">15</option>
                             <option value="16">16</option>
                             <option value="17">17</option>
                             <option value="18">18</option>
-                            <!-- <option value="19">19</option>
+                            <option value="19">19</option>
                             <option value="20">20</option>
                             <option value="21">21</option>
-                            <option value="22">22</option>
+                            <!-- <option value="22">22</option>
                             <option value="23">23</option>
                             <option value="24">24</option> -->
                         </select>
                     </span>
-                    <label for="">giờ (đá trong vòng 1 tiếng)</label><br><br>
+                    <label for="">giờ (đá trong vòng 1 tiếng)</label><br>
+                    <div class="price4">Giá : 400k VND</div>
                     <label for="">Lời nhắn :</label><br>
                     <span class="message">
                         <input type="text" id="message" placeholder="Nhập lời nhắn">
+                        <div class="line-message"></div>
                     </span>
                     <div class="btn">
                         <span class="reset">
-                            <button id="reset" type="reset">Đặt Lại</button>
+                            <button onclick="resetPrice()" id="reset" type="reset">Đặt Lại</button>
                         </span>
                         <span class="submit">
                             <input type="submit" value="Xác Nhận" name="" id="submit">
@@ -556,9 +560,15 @@
             </div>
             <div class="main-diagram">
                 
-                <div class="stand">Khán<br>Đài</div>
+                <div class="stand">
+                    <i class="fas fa-grip-lines-vertical"></i>
+                    Khán<br>Đài
+                </div>
                 <div class="yard">
-                    <div class="gate1">Cổng</div>
+                    <div class="gate1">
+                        Cổng
+                        <i class="fas fa-torii-gate"></i>
+                    </div>
 
                     <div class="main-yard">
                     
@@ -593,7 +603,10 @@
                     
                     </div>
                 </div>
-                <div class="gate2">Cổng</div>
+                <div class="gate2">
+                    <i class="fas fa-torii-gate"></i>
+                    Cổng
+                </div>
 
             </div>
             

@@ -130,15 +130,15 @@ ul.login-signup li a:hover {
 }
 .yard {
     display: block;
-    width: 70%;
+    width: 80%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .main-yard {
     display: block;
     background-color: #1abc9c;
     width: 90%;
-    height: 70%;
-    margin: 10% auto;
+    height: 80%;
+    margin: 5% auto;
     border-radius: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -177,18 +177,18 @@ ul.login-signup li a:hover {
     color: #ecf0f1;
     font-size: 20px;
     font-weight: 600;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.25s ease-in-out;
 }
 .yard1:hover, .yard2:hover, .yard3:hover, .yard4:hover {
+    border: 2px solid #c0392b;
     transform: scale(1.075);
     color: #c0392b;
-    border: 2px solid #c0392b;
 }
 .iconball {
     font-size: 50px;
 }
 .stand {
-    width: 15%;
+    width: 10%;
     height: 50px;
     display: block;
     color: #ecf0f1;
@@ -209,7 +209,7 @@ ul.login-signup li a:hover {
     margin-top: 20px;
 }
 .gate2 {
-    width: 15%;
+    width: 10%;
     height: 5%;
     display: block;
     color: #ecf0f1;
@@ -239,9 +239,9 @@ label {
     font-weight: 500;
     margin-right: 5px;
 }
-#username, #phonenumber {
-    width: 200px;
-    height: 30px;
+#username, #birthyear {
+    width: 90%;
+    height: 8%;
     font-size: 18px;
     /* margin-bottom: 5px; */
     margin-left: 5px;
@@ -249,30 +249,36 @@ label {
     border: 0;
     outline: 0;
     border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: text;
+    
 }
-#username::placeholder, #phonenumber::placeholder, #message::placeholder {
+#username::placeholder, #birthyear::placeholder, #message::placeholder {
     color: #34495e;
     font-size: 15px;
 }
 
-.username, .phonenumber {
+.username, .birthyear {
     /* border-bottom: 1px solid #ffffff; */
     margin-left: 5px;
     /* padding: 5px; */
 }
-.line-user, .line-phone {
+.line-user, .line-birthyear, .line-message {
     width: 0%;
     height: 2px;
-    margin-left: 100px;
     transition: all 0.25s ease-in-out;
 }
 #username:focus + .line-user {
     background-color: #ecf0f1;
-    width: 60%;
+    width: 100%;
 }
-#phonenumber:focus + .line-phone {
+#birthyear:focus + .line-birthyear {
     background-color: #ecf0f1;
-    width: 60%;
+    width: 100%;
+}
+#message:focus + .line-message {
+    background-color: #ecf0f1;
+    width: 100%;
 }
 .dmy {
     margin-top: 10px;
@@ -305,14 +311,19 @@ option {
     border-bottom: 2px solid #ffffff;
     margin-right: 5px;
 }
+.price1, .price2, .price3, .price4 {
+    margin: 5px 0;
+    color: #f1c40f;
+    font-weight: 600;
+    font-size: 18px;
 
+}
 .message {
     display: block;
-    border-bottom: 2px solid #ffffff;
     margin-left: 5px;
     margin-right: 5px;
     padding: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 #message {
     width: 100%;
@@ -327,7 +338,7 @@ option {
     justify-content: space-between;
     margin-top: 10px;
 }
-.submit {
+#submit {
     display: inline-block;
     width: 150px;
     height: 60px;
@@ -335,9 +346,14 @@ option {
     text-align: center;
     cursor: pointer;
     border-radius: 5px;
-    transition: all 0.1s ease-in-out;
+    border: 0;
+    outline: 0;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.25s ease-in-out;
 }
-.reset {
+#reset {
     display: inline-block;
     width: 150px;
     height: 60px;
@@ -345,17 +361,22 @@ option {
     text-align: center;
     cursor: pointer;
     border-radius: 5px;
+    border: 0;
+    outline: 0;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: all 0.25s ease-in-out;
-
 }
-.submit:hover  {
+
+#submit:hover  {
     background-color: #3498db;
 
 }
-.reset:hover {
+#reset:hover {
     background-color: #e74c3c;
 }
-#submit, #reset {
+/* #submit, #reset {
     color: #2c3e50;
     background: transparent;
     border: 0;
@@ -365,4 +386,4 @@ option {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transform: translateY(50%);
     cursor: pointer;
-}
+} */
