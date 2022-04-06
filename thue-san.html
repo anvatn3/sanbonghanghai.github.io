@@ -48,18 +48,18 @@
             </div>
             <div class="main-selection">
                 <!-- invoice-infor1 -->
-                <form action=""  class="invoice-infor1" >
+                <form action="" name="invoice1" method="post" class="invoice-infor1" >
                     <div class="head-form">Sân 1</div>
                     <!-- Tên của bạn -->
                     <span class="username">
                         <i class="fas fa-user"></i>
-                        <input type="text" name="username" id="username" placeholder="Nhập tên" required>
+                        <input type="text" name="username1" id="username" placeholder="Nhập tên" >
                         <div class="line-user"></div>
                     </span>
                     <!-- ngày tháng năm sinh -->
                     <span class="birthyear">
                         <i class="fas fa-birthday-cake"></i>
-                        <input type="date" name="date" id="birthyear" required>
+                        <input type="date" name="date1" id="birthyear" >
                         <div class="line-birthyear"></div>
                     </span>
                     <label for="">Ngày thuê :</label><br>
@@ -168,11 +168,13 @@
                             <button onclick="resetPrice()" id="reset" type="reset">Đặt Lại</button>
                         </span>
                         <span class="submit">
-                            <input type="submit" value="Xác Nhận" name="" id="submit">
+                            <!-- <button  id="confirm1">Xác Nhận</button> -->
+                            <input type="submit" value="XÁC NHẬN" name="" id="submit">
                         </span>
                     </div>
                     
                 </form>
+                
                 <!-- invoice-infor2 -->
                 <form action=""  class="invoice-infor2" >
                     <div class="head-form">Sân 2</div>
@@ -299,6 +301,7 @@
                     </div>
                     
                 </form>
+
                 <!-- invoice-infor3 -->
                 <form action=""  class="invoice-infor3" >
                     <div class="head-form">Sân 3</div>
@@ -425,6 +428,7 @@
                     </div>
                     
                 </form>
+
                 <!-- invoice-infor4 -->
                 <form action=""  class="invoice-infor4" >
                     <div class="head-form">Sân 4</div>
@@ -551,9 +555,10 @@
                     </div>
                     
                 </form>
+
             </div>
         </div>
-
+        
         <div class="diagram">
             <div class="head-diagram">
                 <div class="name-diagram">Chọn Sân</div>
@@ -613,6 +618,72 @@
 
         </div>
     </div>
+    <div class="success" >
+        <div class="confirm-popup">
+            <div class="head-confirm">
+                <i class="fas fa-times x"></i>
+            </div>
+            <div class="content-confirm">
+                <p>Đặt Lịch Thành Công!!!<i class="fas fa-check-circle"></i></p>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="confirm1" >
+        <div class="confirm-popup">
+            <div class="head-confirm">
+                <i class="fas fa-times x"></i>
+            </div>
+            <div class="content-confirm">
+                <p>Xác nhận đặt lịch!!!</p>
+                <div class="btn-confirm">
+                    <button id="cancel">HỦY</button>
+                    <input type="submit" value="XÁC NHẬN" name="" id="submit">
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div class="confirm2" hidden>
+        <div class="confirm-popup">
+            <div class="head-confirm">
+                <i class="fas fa-times x"></i>
+            </div>
+            <div class="content-confirm">
+                <p>Xác nhận đặt lịch!!!</p>
+                <div class="btn-confirm">
+                    <button id="cancel">HỦY</button>
+                    <input type="submit" value="XÁC NHẬN" name="" id="submit">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="confirm3" hidden>
+        <div class="confirm-popup">
+            <div class="head-confirm">
+                <i class="fas fa-times x"></i>
+            </div>
+            <div class="content-confirm">
+                <p>Xác nhận đặt lịch!!!</p>
+                <div class="btn-confirm">
+                    <button id="cancel">HỦY</button>
+                    <input type="submit" value="XÁC NHẬN" name="" id="submit">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="confirm4" hidden>
+        <div class="confirm-popup">
+            <div class="head-confirm">
+                <i class="fas fa-times x"></i>
+            </div>
+            <div class="content-confirm">
+                <p>Xác nhận đặt lịch!!!</p>
+                <div class="btn-confirm">
+                    <button id="cancel">HỦY</button>
+                    <input type="submit" value="XÁC NHẬN" name="" id="submit">
+                </div>
+            </div>
+        </div>
+    </div> -->
     <script src="thue-san.js"></script>
 </body>
 </html>

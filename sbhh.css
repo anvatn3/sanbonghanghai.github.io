@@ -376,14 +376,63 @@ option {
 #reset:hover {
     background-color: #e74c3c;
 }
-/* #submit, #reset {
-    color: #2c3e50;
-    background: transparent;
-    border: 0;
-    outline: 0;
-    font-weight: 700;
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transform: translateY(50%);
+/* .confirm1, .confirm2, .confirm3, .confirm4{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.505);
+    position: fixed;
+    top: 0;
+} */
+.confirm-popup {
+    width: 450px;
+    height: 250px;
+    background-color: #2c3e50;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    border-radius: 5px;
+}
+.head-confirm {
+    height: 20%;
+    width: 100%;
+    direction: rtl;
+    padding: 0px 10px;
+    font-size: 30px;
+}
+.head-confirm i {
     cursor: pointer;
+    transition: all 0.25s ease-in-out;
+
+}
+.head-confirm i:hover {
+    color: #c0392b;
+}
+.content-confirm {
+    width: 100%;
+    height: 80%;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px 50px;
+    color: #ecf0f1;
+
+}
+.btn-confirm {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 30px 0 30px;
+}
+/* #cancel, #submit {
+    background-color: #3498db;
+    border: 0;
+    width: 100px;
+    height: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    color: #ecf0f1;
+    transition: all 0.25s ease-in-out;
+    border-radius: 5px;
+} */
+/* #submit:hover, #cancel:hover {
+    
+    background-color: #c0392b;
 } */

@@ -128,3 +128,49 @@ function resetPrice(){
 
 }
 
+const submit = document.getElementById("submit");
+
+// const confirmPopup1 = document.querySelector(".confirm1");
+
+const success = document.querySelector(".success");
+
+const close = document.querySelector(".x");
+
+const username = document.invoice1.username1.value;
+
+const birthyear = document.invoice1.date1.value;
+
+submit.addEventListener("click", confirmAgain);
+
+close.addEventListener("click", closePopup);
+
+// confirmPopup1.style.display = "none";
+
+success.style.display = "none";
+
+
+
+function confirmAgain(){
+    if(username != ""){
+        success.style.display = "block";
+
+    }
+    if(birthyear != ""){
+        success.style.display = "block";
+        
+    }
+
+}
+
+function closePopup(){
+    if(error1.style.display = "block"){
+        error1.style.display = "none";
+    }
+    if(confirmPopup1.style.display = "block"){
+        confirmPopup1.style.display = "none";
+    }
+}
+
+
+
+
