@@ -183,9 +183,22 @@ ul.login-signup li a:hover {
     border: 2px solid #c0392b;
     transform: scale(1.075);
     color: #c0392b;
+    
 }
-.iconball {
+.iconball  {
     font-size: 50px;
+    margin-top: 20px;
+    /* animation: spinner 1s infinite linear; */
+}
+.iconball:hover  {
+    /* transform: rotate(360deg); */
+    animation: spinner 1s infinite linear;
+
+}
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
 }
 .stand {
     width: 10%;
@@ -227,7 +240,7 @@ form {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .head-form {
-    color: #ecf0f1;
+    color: #c0392b;
     font-size: 25px;
     font-weight: 700;
     text-align: center;
