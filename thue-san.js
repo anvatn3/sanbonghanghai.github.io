@@ -151,24 +151,22 @@ success.style.display = "none";
 
 
 function confirmAgain(){
-    if(username != ""){
-        success.style.display = "block";
+    if(username == "" || birthyear == ""){
+        success.style.display = "none";
 
     }
-    if(birthyear != ""){
+    else {
         success.style.display = "block";
-        
+
     }
 
 }
 
 function closePopup(){
-    if(error1.style.display = "block"){
-        error1.style.display = "none";
+    if(success.style.display = "block"){
+        success.style.display = "none";
     }
-    if(confirmPopup1.style.display = "block"){
-        confirmPopup1.style.display = "none";
-    }
+    
 }
 
 

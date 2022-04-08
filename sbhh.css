@@ -389,13 +389,13 @@ option {
 #reset:hover {
     background-color: #e74c3c;
 }
-/* .confirm1, .confirm2, .confirm3, .confirm4{
+.success{
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.505);
     position: fixed;
     top: 0;
-} */
+}
 .confirm-popup {
     width: 450px;
     height: 250px;
