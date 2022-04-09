@@ -132,7 +132,9 @@ const submit = document.getElementById("submit");
 
 // const confirmPopup1 = document.querySelector(".confirm1");
 
-const success = document.querySelector(".success");
+const success = document.getElementById("success");
+
+const successPopup = document.querySelector(".success-popup");
 
 const close = document.querySelector(".x");
 
@@ -140,34 +142,46 @@ const username = document.invoice1.username1.value;
 
 const birthyear = document.invoice1.date1.value;
 
-submit.addEventListener("click", confirmAgain);
-
-close.addEventListener("click", closePopup);
-
-// confirmPopup1.style.display = "none";
-
 success.style.display = "none";
 
 
+submit.addEventListener("click", function(){
+    success.classList.add("show");
+});
 
-function confirmAgain(){
-    if(username == "" || birthyear == ""){
-        success.style.display = "none";
+close.addEventListener("click", function(){
+    // success.classList.remove("show");
 
-    }
-    else {
-        success.style.display = "block";
-
-    }
-
-}
-
-function closePopup(){
     if(success.style.display = "block"){
         success.style.display = "none";
     }
+});
+
+success.addEventListener("click", function(e){
+    if(!successPopup.contains(e.target)){
+        success.classList.remove("show");
+    }
+});
+// success.style.display = "none";
+
+// function confirmAgain(){
+//     // if(username == "" || birthyear == ""){
+//     //     success.style.display = "none";
+
+//     // }
+//     // else {
+//     //     success.style.display = "block";
+
+//     // }
+
+// }
+
+// function closePopup(){
+//     if(success.style.display = "block"){
+//         success.style.display = "none";
+//     }
     
-}
+// }
 
 
 
