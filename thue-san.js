@@ -128,9 +128,9 @@ function resetPrice(){
 
 }
 
-const submit = document.getElementById("submit");
+const form1 = document.getElementById("invoice1");
 
-// const confirmPopup1 = document.querySelector(".confirm1");
+const submit = document.getElementById("submit");
 
 const success = document.getElementById("success");
 
@@ -138,23 +138,50 @@ const successPopup = document.querySelector(".success-popup");
 
 const close = document.querySelector(".x");
 
-const username = document.invoice1.username1.value;
+const username = document.getElementById("username");
 
-const birthyear = document.invoice1.date1.value;
+const email = document.getElementById("email");
 
-success.style.display = "none";
+const date = document.getElementById("date");
 
+
+// let today = new Date();    
+
+// success.style.display = "none";
+
+success.classList.remove("show");
+
+form1.addEventListener("submit", function(e){
+    e.preventDefault();
+});
 
 submit.addEventListener("click", function(){
-    success.classList.add("show");
+    // let n1 = today.getTime();
+    if(username.value === "" || email.value === "" || date.value === ""){
+        success.classList.remove("show");
+        
+    }
+    else{
+       
+        success.classList.add("show");
+
+
+    }
+    // if(n2>n1){
+    //     success.classList.add("show");
+    // }
+    // else {
+    //     success.style.display = "none";
+
+    // }
 });
 
 close.addEventListener("click", function(){
-    // success.classList.remove("show");
+    success.classList.remove("show");
 
-    if(success.style.display = "block"){
-        success.style.display = "none";
-    }
+    // if(success.style.display = "block"){
+    //     success.style.display = "none";
+    // }
 });
 
 success.addEventListener("click", function(e){

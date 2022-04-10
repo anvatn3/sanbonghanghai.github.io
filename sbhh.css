@@ -259,7 +259,7 @@ label {
     font-weight: 500;
     margin-right: 5px;
 }
-#username, #birthyear {
+#username, #email {
     width: 90%;
     height: 8%;
     font-size: 18px;
@@ -273,17 +273,17 @@ label {
     cursor: text;
     
 }
-#username::placeholder, #birthyear::placeholder, #message::placeholder {
+#username::placeholder, #email::placeholder, #message::placeholder {
     color: #34495e;
     font-size: 15px;
 }
 
-.username, .birthyear {
+.username, .email {
     /* border-bottom: 1px solid #ffffff; */
     margin-left: 5px;
     /* padding: 5px; */
 }
-.line-user, .line-birthyear, .line-message {
+.line-user, .line-email, .line-message {
     width: 0%;
     height: 2px;
     transition: all 0.25s ease-in-out;
@@ -292,7 +292,7 @@ label {
     background-color: #ecf0f1;
     width: 100%;
 }
-#birthyear:focus + .line-birthyear {
+#email:focus + .line-email {
     background-color: #ecf0f1;
     width: 100%;
 }
@@ -300,9 +300,18 @@ label {
     background-color: #ecf0f1;
     width: 100%;
 }
-.dmy {
-    margin-top: 10px;
-    margin-left: 30px;
+.day {
+    margin: 10px 0 10px 30px;
+}
+#date {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-weight: 700;
+    cursor: pointer;
+    width: 90%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
 }
 select{
     background: transparent;
@@ -310,6 +319,7 @@ select{
     outline: 0;
     font-weight: 700;
     cursor: pointer;
+    font-size: 16px;
 }
 select::-webkit-scrollbar {
     width: 3px;
@@ -327,7 +337,7 @@ option {
     outline: 0;
     border: 0;
 }
-.day, .month, .year, .timestart {
+.timestart {
     border-bottom: 2px solid #ffffff;
     margin-right: 5px;
 }
@@ -450,11 +460,17 @@ option {
 .content-success {
     width: 100%;
     height: 80%;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
-    padding: 20px 50px;
+    padding: 40px 50px;
     color: #ecf0f1;
 
+}
+.content-success i{
+    display: block;
+    font-size: 50px;
+    color: #2ecc71;
+    margin-top: 20px;
 }
 /* .btn-confirm {
     display: flex;
