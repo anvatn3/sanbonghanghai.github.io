@@ -6,13 +6,13 @@ const yard3 = document.querySelector(".yard3");
 
 const yard4 = document.querySelector(".yard4");
 
-const invoice1 = document.querySelector(".invoice-infor1");
+const invoice1 = document.getElementById("invoice1");
 
-const invoice2 = document.querySelector(".invoice-infor2");
+const invoice2 = document.getElementById("invoice2");
 
-const invoice3 = document.querySelector(".invoice-infor3");
+const invoice3 = document.getElementById("invoice3");
 
-const invoice4 = document.querySelector(".invoice-infor4");
+const invoice4 = document.getElementById("invoice4");
 
 
 
@@ -128,9 +128,21 @@ function resetPrice(){
 
 }
 
-const form1 = document.getElementById("invoice1");
+// const invoice1 = document.getElementById("invoice1");
 
-const submit = document.getElementById("submit");
+// const invoice2 = document.getElementById("invoice2");
+
+// const invoice3 = document.getElementById("invoice3");
+
+// const invoice4 = document.getElementById("invoice4");
+
+const submit1 = document.getElementById("submit1");
+
+const submit2 = document.getElementById("submit2");
+
+const submit3 = document.getElementById("submit3");
+
+const submit4 = document.getElementById("submit4");
 
 const success = document.getElementById("success");
 
@@ -138,12 +150,21 @@ const successPopup = document.querySelector(".success-popup");
 
 const close = document.querySelector(".x");
 
-const username = document.getElementById("username");
+const username1 = document.getElementById("username1");
+const email1 = document.getElementById("email1");
+const date1 = document.getElementById("date1");
 
-const email = document.getElementById("email");
+const username2 = document.getElementById("username2");
+const email2 = document.getElementById("email2");
+const date2 = document.getElementById("date2");
 
-const date = document.getElementById("date");
+const username3 = document.getElementById("username3");
+const email3 = document.getElementById("email3");
+const date3 = document.getElementById("date3");
 
+const username4 = document.getElementById("username4");
+const email4 = document.getElementById("email4");
+const date4 = document.getElementById("date4");
 
 // let today = new Date();    
 
@@ -151,31 +172,59 @@ const date = document.getElementById("date");
 
 success.classList.remove("show");
 
-form1.addEventListener("submit", function(e){
+invoice1.addEventListener("submit", function(e){
+    e.preventDefault();
+});
+invoice2.addEventListener("submit", function(e){
+    e.preventDefault();
+});
+invoice3.addEventListener("submit", function(e){
+    e.preventDefault();
+});
+invoice4.addEventListener("submit", function(e){
     e.preventDefault();
 });
 
-submit.addEventListener("click", function(){
-    // let n1 = today.getTime();
-    if(username.value === "" || email.value === "" || date.value === ""){
+submit1.addEventListener("click", function(){
+    if(username1.value === "" || email1.value === "" || date1.value === ""){
         success.classList.remove("show");
-        
     }
     else{
-       
         success.classList.add("show");
-
+        invoice1.style.display = "none";
+        
+    }
+});
+submit2.addEventListener("click", function(){
+    if(username2.value === "" || email2.value === "" || date2.value === ""){
+        success.classList.remove("show");
+    }
+    else{
+        success.classList.add("show");
+        invoice2.style.display = "none";
 
     }
-    // if(n2>n1){
-    //     success.classList.add("show");
-    // }
-    // else {
-    //     success.style.display = "none";
-
-    // }
 });
+submit3.addEventListener("click", function(){
+    if(username3.value === "" || email3.value === "" || date3.value === ""){
+        success.classList.remove("show");
+    }
+    else{
+        success.classList.add("show");
+        invoice3.style.display = "none";
 
+    }
+});
+submit4.addEventListener("click", function(){
+    if(username4.value === "" || email4.value === "" || date4.value === ""){
+        success.classList.remove("show");
+    }
+    else{
+        success.classList.add("show");
+        invoice4.style.display = "none";
+
+    }
+});
 close.addEventListener("click", function(){
     success.classList.remove("show");
 

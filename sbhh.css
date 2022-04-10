@@ -259,7 +259,10 @@ label {
     font-weight: 500;
     margin-right: 5px;
 }
-#username, #email {
+#username1, #email1,
+#username2, #email2,
+#username3, #email3,
+#username4, #email4 {
     width: 90%;
     height: 8%;
     font-size: 18px;
@@ -273,7 +276,11 @@ label {
     cursor: text;
     
 }
-#username::placeholder, #email::placeholder, #message::placeholder {
+#username1::placeholder, #email1::placeholder, 
+#username2::placeholder, #email2::placeholder, 
+#username3::placeholder, #email3::placeholder, 
+#username4::placeholder, #email4::placeholder, 
+#message::placeholder {
     color: #34495e;
     font-size: 15px;
 }
@@ -288,11 +295,17 @@ label {
     height: 2px;
     transition: all 0.25s ease-in-out;
 }
-#username:focus + .line-user {
+#username1:focus + .line-user,
+#username2:focus + .line-user,
+#username3:focus + .line-user,
+#username4:focus + .line-user {
     background-color: #ecf0f1;
     width: 100%;
 }
-#email:focus + .line-email {
+#email1:focus + .line-email,
+#email2:focus + .line-email,
+#email3:focus + .line-email,
+#email4:focus + .line-email {
     background-color: #ecf0f1;
     width: 100%;
 }
@@ -303,7 +316,7 @@ label {
 .day {
     margin: 10px 0 10px 30px;
 }
-#date {
+#date1, #date2, #date3, #date4 {
     background: transparent;
     border: 0;
     outline: 0;
@@ -368,7 +381,7 @@ option {
     justify-content: space-between;
     margin-top: 10px;
 }
-#submit {
+#submit1, #submit2, #submit3, #submit4 {
     display: inline-block;
     width: 150px;
     height: 60px;
@@ -399,7 +412,7 @@ option {
     transition: all 0.25s ease-in-out;
 }
 
-#submit:hover  {
+#submit1:hover, #submit2:hover, #submit3:hover, #submit4:hover {
     background-color: #3498db;
 
 }
