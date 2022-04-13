@@ -31,6 +31,17 @@
                     <a href="">Thông Tin Sân</a>
                 </li>
             </ul>
+            <div id="user">
+                <ul id="main-user">
+                    <li><i class="far fa-user-circle"></i>Hồ sơ</li>
+                    <li>
+                        <a href="lich-dat.html">
+                        <i class="far fa-calendar-check"></i>Lịch đặt</li>
+                        </a>
+                    <li><i class="far fa-credit-card"></i>Nạp tiền</li>
+                    <li><i class="fas fa-sign-out-alt"></i>Đăng Xuất</li>
+                </ul>
+            </div>
             <!-- <ul class="login-signup">
                 <li>
                     <a href="">Đăng Ký</a>
@@ -53,22 +64,27 @@
                     <!-- Tên của bạn -->
                     <span class="username">
                         <i class="fas fa-user"></i>
-                        <input type="text" name="username" id="username1" placeholder="Nhập tên" required>
+                        <input type="text" name="username" id="username1" placeholder="Nhập tên" >
                         <div class="line-user"></div>
+                        <div class="alertname1">
+                            Vui lòng điền thông tin!!!
+                        </div>
                     </span>
                     <!-- email -->
-                    <span class="email">
+                    <!-- <span class="email">
                         <i class="fas fa-envelope"></i>
-                        <input type="email" name="email" id="email1" placeholder="Nhập email" required>
+                        <input type="email" name="email" id="email1" placeholder="Nhập email" >
                         <div class="line-email"></div>
-                    </span>
+                    </span> -->
                     <label for="">Ngày thuê :</label><br>
                     <div class="day">
                         <i class="fas fa-calendar-alt"></i>
                         <span class="date">
-                            <input type="date" name="date" id="date1" min="2022-04-10" max="2022-04-30" required>
+                            <input type="date" name="date" id="date1" min="2022-04-10" max="2022-04-30" >
                         </span>
-                        
+                        <div class="alertdate1">
+                            Vui lòng điền thông tin!!!
+                        </div>
                     </div>
                     <label for="">Thời gian thuê :</label> 
                     <i class="fas fa-clock"></i>
@@ -109,6 +125,7 @@
                         <input type="text" id="message" placeholder="Nhập lời nhắn">
                         <div class="line-message"></div>
                     </span>
+                    
                     <div class="btn">
                         <span class="reset">
                             <button id="reset" type="reset">Đặt Lại</button>
@@ -127,21 +144,27 @@
                     <!-- Tên của bạn -->
                     <span class="username">
                         <i class="fas fa-user"></i>
-                        <input type="text" name="username" id="username2" placeholder="Nhập tên" required>
+                        <input type="text" name="username" id="username2" placeholder="Nhập tên" >
                         <div class="line-user"></div>
+                        <div class="alertname2">
+                            Vui lòng điền thông tin!!!
+                        </div>
                     </span>
                     <!-- email -->
-                    <span class="email">
+                    <!-- <span class="email">
                         <i class="fas fa-envelope"></i>
-                        <input type="email" name="email" id="email2" placeholder="Nhập email" required>
+                        <input type="email" name="email" id="email2" placeholder="Nhập email" >
                         <div class="line-email"></div>
-                    </span>
+                    </span> -->
                     <label for="">Ngày thuê :</label><br>
                     <div class="day">
                         <i class="fas fa-calendar-alt"></i>
                         <span class="date">
-                            <input type="date" name="date" id="date2" min="2022-04-10" max="2022-04-30" required>
+                            <input type="date" name="date" id="date2" min="2022-04-10" max="2022-04-30" >
                         </span>
+                        <div class="alertdate2">
+                            Vui lòng điền thông tin!!!
+                        </div>
                     </div>
                     <label for="">Thời gian thuê :</label>
                     <i class="fas fa-clock"></i>
@@ -190,7 +213,6 @@
                             <input type="submit" value="Xác Nhận" name="" id="submit2">
                         </span>
                     </div>
-                    
                 </form>
 
                 <!-- invoice-infor3 -->
@@ -199,20 +221,27 @@
                     <!-- Tên của bạn -->
                     <span class="username">
                         <i class="fas fa-user"></i>
-                        <input type="text" name="username" id="username3" placeholder="Nhập tên" required>
+                        <input type="text" name="username" id="username3" placeholder="Nhập tên" >
                         <div class="line-user"></div>
+                        <div class="alertname3">
+                            Vui lòng điền thông tin!!!
+                        </div>
                     </span>
                     <!-- email -->
-                    <span class="email">
+                    <!-- <span class="email">
                         <i class="fas fa-envelope"></i>
-                        <input type="email" name="email" id="email3" placeholder="Nhập email" required>
+                        <input type="email" name="email" id="email3" placeholder="Nhập email" >
                         <div class="line-email"></div>
-                    </span>
+                    </span> -->
                     <label for="">Ngày thuê :</label><br>
                     <div class="day">
                         <i class="fas fa-calendar-alt"></i>
                         <span class="date">
-                            <input type="date" name="date" id="date3" min="2022-04-10" max="2022-04-30" required>
+                            <input type="date" name="date" id="date3" min="2022-04-10" max="2022-04-30" >
+                        </span>
+                        <div class="alertdate3">
+                            Vui lòng điền thông tin!!!
+                        </div>
                     </div>
                     <label for="">Thời gian thuê :</label>
                     <i class="fas fa-clock"></i>
@@ -261,7 +290,6 @@
                             <input type="submit" value="Xác Nhận" name="" id="submit3">
                         </span>
                     </div>
-                    
                 </form>
 
                 <!-- invoice-infor4 -->
@@ -270,20 +298,27 @@
                     <!-- Tên của bạn -->
                     <span class="username">
                         <i class="fas fa-user"></i>
-                        <input type="text" name="username" id="username4" placeholder="Nhập tên" required>
+                        <input type="text" name="username" id="username4" placeholder="Nhập tên" >
                         <div class="line-user"></div>
+                        <div class="alertname4">
+                            Vui lòng điền thông tin!!!
+                        </div>
                     </span>
                     <!-- email -->
-                    <span class="email">
+                    <!-- <span class="email">
                         <i class="fas fa-envelope"></i>
-                        <input type="email" name="email" id="email4" placeholder="Nhập email" required>
+                        <input type="email" name="email" id="email4" placeholder="Nhập email" >
                         <div class="line-email"></div>
-                    </span>
+                    </span> -->
                     <label for="">Ngày thuê :</label><br>
                     <div class="day">
                         <i class="fas fa-calendar-alt"></i>
                         <span class="date">
-                            <input type="date" name="date" id="date4" min="2022-04-10" max="2022-04-30"  required>
+                            <input type="date" name="date" id="date4" min="2022-04-10" max="2022-04-30"  >
+                        </span>
+                        <div class="alertdate4">
+                            Vui lòng điền thông tin!!!
+                        </div>
                     </div>
                     <label for="">Thời gian thuê :</label>
                     <i class="fas fa-clock"></i>
@@ -332,7 +367,6 @@
                             <input type="submit" value="Xác Nhận" name="" id="submit4">
                         </span>
                     </div>
-                    
                 </form>
 
             </div>
@@ -399,62 +433,7 @@
             </div>
         </div>
     </div>
-    <!-- <div class="confirm1" >
-        <div class="confirm-popup">
-            <div class="head-confirm">
-                <i class="fas fa-times x"></i>
-            </div>
-            <div class="content-confirm">
-                <p>Xác nhận đặt lịch!!!</p>
-                <div class="btn-confirm">
-                    <button id="cancel">HỦY</button>
-                    <input type="submit" value="XÁC NHẬN" name="" id="submit">
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- <div class="confirm2" hidden>
-        <div class="confirm-popup">
-            <div class="head-confirm">
-                <i class="fas fa-times x"></i>
-            </div>
-            <div class="content-confirm">
-                <p>Xác nhận đặt lịch!!!</p>
-                <div class="btn-confirm">
-                    <button id="cancel">HỦY</button>
-                    <input type="submit" value="XÁC NHẬN" name="" id="submit">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="confirm3" hidden>
-        <div class="confirm-popup">
-            <div class="head-confirm">
-                <i class="fas fa-times x"></i>
-            </div>
-            <div class="content-confirm">
-                <p>Xác nhận đặt lịch!!!</p>
-                <div class="btn-confirm">
-                    <button id="cancel">HỦY</button>
-                    <input type="submit" value="XÁC NHẬN" name="" id="submit">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="confirm4" hidden>
-        <div class="confirm-popup">
-            <div class="head-confirm">
-                <i class="fas fa-times x"></i>
-            </div>
-            <div class="content-confirm">
-                <p>Xác nhận đặt lịch!!!</p>
-                <div class="btn-confirm">
-                    <button id="cancel">HỦY</button>
-                    <input type="submit" value="XÁC NHẬN" name="" id="submit">
-                </div>
-            </div>
-        </div>
-    </div> -->
+    
     <script src="thue-san.js"></script>
 </body>
 </html>

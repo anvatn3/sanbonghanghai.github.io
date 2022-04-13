@@ -26,12 +26,13 @@ invoice2.style.display = "none";
 invoice3.style.display = "none";
 invoice4.style.display = "none";
 
-
 function showInvoice1(){
     invoice1.style.display = "block";
     invoice2.style.display = "none";
     invoice3.style.display = "none";
     invoice4.style.display = "none";
+    alertName1.style.display = "none";
+    alertDate1.style.display = "none";
     
 }
 function showInvoice2(){
@@ -39,6 +40,8 @@ function showInvoice2(){
     invoice2.style.display = "block";
     invoice3.style.display = "none";
     invoice4.style.display = "none";
+    alertName2.style.display = "none";
+    alertDate2.style.display = "none";
     
 }
 function showInvoice3(){
@@ -46,6 +49,8 @@ function showInvoice3(){
     invoice2.style.display = "none";
     invoice3.style.display = "block";
     invoice4.style.display = "none";
+    alertName3.style.display = "none";
+    alertDate3.style.display = "none";
 
 }
 function showInvoice4(){
@@ -53,6 +58,8 @@ function showInvoice4(){
     invoice2.style.display = "none";
     invoice3.style.display = "none";
     invoice4.style.display = "block";
+    alertName4.style.display = "none";
+    alertDate4.style.display = "none";
 
 }
 
@@ -150,6 +157,16 @@ const successPopup = document.querySelector(".success-popup");
 
 const close = document.querySelector(".x");
 
+const alertName1 = document.querySelector(".alertname1");
+const alertName2 = document.querySelector(".alertname2");
+const alertName3 = document.querySelector(".alertname3");
+const alertName4 = document.querySelector(".alertname4");
+
+const alertDate1 = document.querySelector(".alertdate1");
+const alertDate2 = document.querySelector(".alertdate2");
+const alertDate3 = document.querySelector(".alertdate3");
+const alertDate4 = document.querySelector(".alertdate4");
+
 const username1 = document.getElementById("username1");
 const email1 = document.getElementById("email1");
 const date1 = document.getElementById("date1");
@@ -166,9 +183,45 @@ const username4 = document.getElementById("username4");
 const email4 = document.getElementById("email4");
 const date4 = document.getElementById("date4");
 
-// let today = new Date();    
+
+let today = new Date();
+let dd = today.getDate() +2;
+let mm = today.getMonth() + 1; //January is 0!
+let yyyy = today.getFullYear();
+
+if (dd < 10) {
+   dd = '0' + dd;
+}
+if (mm < 10) {
+   mm = '0' + mm;
+} 
+    
+today = yyyy + '-' + mm + '-' + dd;
+document.getElementById("date1").setAttribute("min", today);
+document.getElementById("date2").setAttribute("min", today);
+document.getElementById("date3").setAttribute("min", today);
+document.getElementById("date4").setAttribute("min", today);
+
+let lastday = function(y,m){
+    return  new Date(y, m +1, 0).getDate();
+}
+let ld = yyyy + '-' + mm + '-' + lastday(yyyy, mm-1);
+document.getElementById("date1").setAttribute("max", ld);
+document.getElementById("date2").setAttribute("max", ld);
+document.getElementById("date3").setAttribute("max", ld);
+document.getElementById("date4").setAttribute("max", ld);
 
 // success.style.display = "none";
+
+alertName1.style.display = "none";
+alertName2.style.display = "none";
+alertName3.style.display = "none";
+alertName4.style.display = "none";
+
+alertDate1.style.display = "none";
+alertDate2.style.display = "none";
+alertDate3.style.display = "none";
+alertDate4.style.display = "none";
 
 success.classList.remove("show");
 
@@ -186,43 +239,111 @@ invoice4.addEventListener("submit", function(e){
 });
 
 submit1.addEventListener("click", function(){
-    if(username1.value === "" || email1.value === "" || date1.value === ""){
+    if(username1.value === "" || date1.value === ""){
         success.classList.remove("show");
+        alertName1.style.display = "block";
+        alertName2.style.display = "block";
+        alertName3.style.display = "block";
+        alertName4.style.display = "block";
+
+        alertDate1.style.display = "block";
+        alertDate2.style.display = "block";
+        alertDate3.style.display = "block";
+        alertDate4.style.display = "block";
     }
     else{
         success.classList.add("show");
         invoice1.style.display = "none";
+        alertName1.style.display = "none";
+        alertName2.style.display = "none";
+        alertName3.style.display = "none";
+        alertName4.style.display = "none";
         
+        alertDate1.style.display = "none";
+        alertDate2.style.display = "none";
+        alertDate3.style.display = "none";
+        alertDate4.style.display = "none";
     }
 });
 submit2.addEventListener("click", function(){
-    if(username2.value === "" || email2.value === "" || date2.value === ""){
+    if(username2.value === "" || date2.value === ""){
         success.classList.remove("show");
+        alertName1.style.display = "block";
+        alertName2.style.display = "block";
+        alertName3.style.display = "block";
+        alertName4.style.display = "block";
+
+        alertDate1.style.display = "block";
+        alertDate2.style.display = "block";
+        alertDate3.style.display = "block";
+        alertDate4.style.display = "block";
     }
     else{
         success.classList.add("show");
         invoice2.style.display = "none";
+        alertSubmit1.style.display = "none";
+        alertSubmit2.style.display = "none";
+        alertSubmit3.style.display = "none";
+        alertSubmit4.style.display = "none";
 
+        alertDate1.style.display = "none";
+        alertDate2.style.display = "none";
+        alertDate3.style.display = "none";
+        alertDate4.style.display = "none";
     }
 });
 submit3.addEventListener("click", function(){
-    if(username3.value === "" || email3.value === "" || date3.value === ""){
+    if(username3.value === "" || date3.value === ""){
         success.classList.remove("show");
+        alertName1.style.display = "block";
+        alertName2.style.display = "block";
+        alertName3.style.display = "block";
+        alertName4.style.display = "block";
+
+        alertDate1.style.display = "block";
+        alertDate2.style.display = "block";
+        alertDate3.style.display = "block";
+        alertDate4.style.display = "block";
     }
     else{
         success.classList.add("show");
         invoice3.style.display = "none";
+        alertName1.style.display = "none";
+        alertName2.style.display = "none";
+        alertName3.style.display = "none";
+        alertName4.style.display = "none";
 
+        alertDate1.style.display = "none";
+        alertDate2.style.display = "none";
+        alertDate3.style.display = "none";
+        alertDate4.style.display = "none";
     }
 });
 submit4.addEventListener("click", function(){
-    if(username4.value === "" || email4.value === "" || date4.value === ""){
+    if(username4.value === "" || date4.value === ""){
         success.classList.remove("show");
+        alertName1.style.display = "block";
+        alertName2.style.display = "block";
+        alertName3.style.display = "block";
+        alertName4.style.display = "block";
+
+        alertDate1.style.display = "block";
+        alertDate2.style.display = "block";
+        alertDate3.style.display = "block";
+        alertDate4.style.display = "block";
     }
     else{
         success.classList.add("show");
         invoice4.style.display = "none";
+        alertName1.style.display = "none";
+        alertName2.style.display = "none";
+        alertName3.style.display = "none";
+        alertName4.style.display = "none";
 
+        alertDate1.style.display = "none";
+        alertDate2.style.display = "none";
+        alertDate3.style.display = "none";
+        alertDate4.style.display = "none";
     }
 });
 close.addEventListener("click", function(){
@@ -238,27 +359,69 @@ success.addEventListener("click", function(e){
         success.classList.remove("show");
     }
 });
-// success.style.display = "none";
 
-// function confirmAgain(){
-//     // if(username == "" || birthyear == ""){
-//     //     success.style.display = "none";
+username1.onfocus = function() {
+    if( alertName1.style.display = "block") {
+        alertName1.style.display = "none";
+    }   
+};
+username2.onfocus = function() {
+    if( alertName2.style.display = "block") {
+        alertName2.style.display = "none";
+    }   
+};
+username3.onfocus = function() {
+    if( alertName3.style.display = "block") {
+        alertName3.style.display = "none";
+    }   
+};
+username4.onfocus = function() {
+    if( alertName4.style.display = "block") {
+        alertName4.style.display = "none";
+    }   
+};
 
-//     // }
-//     // else {
-//     //     success.style.display = "block";
+date1.onfocus = function() {
+    if( alertDate1.style.display = "block") {
+        alertDate1.style.display = "none";
+    }   
+};
+date2.onfocus = function() {
+    if( alertDate2.style.display = "block") {
+        alertDate2.style.display = "none";
+    }   
+};
+date3.onfocus = function() {
+    if( alertDate3.style.display = "block") {
+        alertDate3.style.display = "none";
+    }   
+};
+date4.onfocus = function() {
+    if( alertDate4.style.display = "block") {
+        alertDate4.style.display = "none";
+    }   
+};
 
-//     // }
+// const user = document.getElementById("user");
 
-// }
+const userSelect = document.getElementById("main-user");
 
-// function closePopup(){
-//     if(success.style.display = "block"){
-//         success.style.display = "none";
-//     }
-    
-// }
+userSelect.style.display = "none";
 
+let userClick = true;
 
+window.onload = function(){
+    document.onclick = function(u){
+        if(u.target.id != "main-user" && userClick == false){
+            userSelect.style.display = "none";
+            console.log(u.target);
+            userClick = true;
+        }
+        if(u.target.id == "user" && userClick == true ){
+            userSelect.style.display = "block";
+            userClick = false;
 
+        }
+    };
+};
 
