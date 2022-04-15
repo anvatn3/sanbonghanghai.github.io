@@ -11,7 +11,6 @@ window.onload = function(){
     document.onclick = function(u){
         if(u.target.id != "main-user" && userClick == false){
             userSelect.style.display = "none";
-            console.log(u.target);
             userClick = true;
         }
         if(u.target.id == "user" && userClick == true ){
@@ -20,4 +19,4 @@ window.onload = function(){
 
         }
     };
-};
+} 

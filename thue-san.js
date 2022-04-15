@@ -241,15 +241,19 @@ invoice4.addEventListener("submit", function(e){
 submit1.addEventListener("click", function(){
     if(username1.value === "" || date1.value === ""){
         success.classList.remove("show");
-        alertName1.style.display = "block";
-        alertName2.style.display = "block";
-        alertName3.style.display = "block";
-        alertName4.style.display = "block";
-
-        alertDate1.style.display = "block";
-        alertDate2.style.display = "block";
-        alertDate3.style.display = "block";
-        alertDate4.style.display = "block";
+        if(username1.value === "" ){
+            alertName1.style.display = "block";
+            alertName2.style.display = "block";
+            alertName3.style.display = "block";
+            alertName4.style.display = "block";
+        }
+        if(date1.value === "" ){
+            alertDate1.style.display = "block";
+            alertDate2.style.display = "block";
+            alertDate3.style.display = "block";
+            alertDate4.style.display = "block";
+        }
+     
     }
     else{
         success.classList.add("show");
@@ -268,15 +272,18 @@ submit1.addEventListener("click", function(){
 submit2.addEventListener("click", function(){
     if(username2.value === "" || date2.value === ""){
         success.classList.remove("show");
-        alertName1.style.display = "block";
-        alertName2.style.display = "block";
-        alertName3.style.display = "block";
-        alertName4.style.display = "block";
-
-        alertDate1.style.display = "block";
-        alertDate2.style.display = "block";
-        alertDate3.style.display = "block";
-        alertDate4.style.display = "block";
+        if(username2.value === "" ){
+            alertName1.style.display = "block";
+            alertName2.style.display = "block";
+            alertName3.style.display = "block";
+            alertName4.style.display = "block";
+        }
+        if(date2.value === "" ){
+            alertDate1.style.display = "block";
+            alertDate2.style.display = "block";
+            alertDate3.style.display = "block";
+            alertDate4.style.display = "block";
+        }
     }
     else{
         success.classList.add("show");
@@ -295,15 +302,18 @@ submit2.addEventListener("click", function(){
 submit3.addEventListener("click", function(){
     if(username3.value === "" || date3.value === ""){
         success.classList.remove("show");
-        alertName1.style.display = "block";
-        alertName2.style.display = "block";
-        alertName3.style.display = "block";
-        alertName4.style.display = "block";
-
-        alertDate1.style.display = "block";
-        alertDate2.style.display = "block";
-        alertDate3.style.display = "block";
-        alertDate4.style.display = "block";
+        if(username3.value === "" ){
+            alertName1.style.display = "block";
+            alertName2.style.display = "block";
+            alertName3.style.display = "block";
+            alertName4.style.display = "block";
+        }
+        if(date3.value === "" ){
+            alertDate1.style.display = "block";
+            alertDate2.style.display = "block";
+            alertDate3.style.display = "block";
+            alertDate4.style.display = "block";
+        }
     }
     else{
         success.classList.add("show");
@@ -322,15 +332,18 @@ submit3.addEventListener("click", function(){
 submit4.addEventListener("click", function(){
     if(username4.value === "" || date4.value === ""){
         success.classList.remove("show");
-        alertName1.style.display = "block";
-        alertName2.style.display = "block";
-        alertName3.style.display = "block";
-        alertName4.style.display = "block";
-
-        alertDate1.style.display = "block";
-        alertDate2.style.display = "block";
-        alertDate3.style.display = "block";
-        alertDate4.style.display = "block";
+        if(username4.value === "" ){
+            alertName1.style.display = "block";
+            alertName2.style.display = "block";
+            alertName3.style.display = "block";
+            alertName4.style.display = "block";
+        }
+        if(date4.value === "" ){
+            alertDate1.style.display = "block";
+            alertDate2.style.display = "block";
+            alertDate3.style.display = "block";
+            alertDate4.style.display = "block";
+        }
     }
     else{
         success.classList.add("show");
