@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sân bóng Hàng Hải</title>
     <link rel="stylesheet" href="..\sbhh.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
 </head>
 <body>
@@ -35,7 +36,7 @@
                     <a href="">Đăng Ký</a>
                 </li>
                 <li>
-                    <a href="">Đăng Nhập</a>
+                    <button class="sign-in-btn">Đăng Nhập</button>
                 </li>
             </ul>
         </div>
@@ -45,5 +46,26 @@
 
         </div>
     </div>
+    <div id="sign-in" class="show-sign-in">
+        <div class="sign-in-popup">
+            <div class="head-sign-in">
+                <i class="fas fa-times x"></i>
+            </div>
+            <div class="content-sign-in">
+                <div class="title-sign-in">
+                    Đăng Nhập
+                </div>
+                <form id="form-sign-in" action="">
+                    <label for="">Hãy đăng nhập để sử dụng dịch vụ</label>
+                    <input type="text" name="username" id="username" placeholder="Tên đăng nhập">
+                    <input type="password" name="password" id="password" placeholder="Mật khẩu">
+                    <input type="submit" value="Đăng nhập" id="submit-sign-in">
+                    <button id="switch-sign-up">Đăng ký mới <i class="fas fa-angle-right"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+
 </body>
 </html>

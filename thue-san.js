@@ -15,7 +15,6 @@ const invoice3 = document.getElementById("invoice3");
 const invoice4 = document.getElementById("invoice4");
 
 
-
 yard1.addEventListener("click", showInvoice1);
 yard2.addEventListener("click", showInvoice2);
 yard3.addEventListener("click", showInvoice3);
@@ -223,7 +222,6 @@ alertDate2.style.display = "none";
 alertDate3.style.display = "none";
 alertDate4.style.display = "none";
 
-success.classList.remove("show");
 
 invoice1.addEventListener("submit", function(e){
     e.preventDefault();
@@ -359,19 +357,19 @@ submit4.addEventListener("click", function(){
         alertDate4.style.display = "none";
     }
 });
+
+success.classList.remove("show");
+
 close.addEventListener("click", function(){
     success.classList.remove("show");
 
-    // if(success.style.display = "block"){
-    //     success.style.display = "none";
-    // }
 });
 
-success.addEventListener("click", function(e){
-    if(!successPopup.contains(e.target)){
-        success.classList.remove("show");
-    }
-});
+// success.addEventListener("click", function(e){
+//     if(!successPopup.contains(e.target)){
+//         success.classList.remove("show");
+//     }
+// });
 
 username1.onfocus = function() {
     if( alertName1.style.display = "block") {
@@ -427,7 +425,6 @@ window.onload = function(){
     document.onclick = function(u){
         if(u.target.id != "main-user" && userClick == false){
             userSelect.style.display = "none";
-            console.log(u.target);
             userClick = true;
         }
         if(u.target.id == "user" && userClick == true ){
@@ -437,4 +434,7 @@ window.onload = function(){
         }
     };
 };
+
+
+
 
