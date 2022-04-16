@@ -435,6 +435,56 @@ window.onload = function(){
     };
 };
 
+const yP1 = document.querySelector(".y-p1");
+const yP2 = document.querySelector(".y-p2");
+const yP3 = document.querySelector(".y-p3");
+const yP4 = document.querySelector(".y-p4");
 
+yP1.style.display = "none";
+yP2.style.display = "none";
+yP3.style.display = "none";
+yP4.style.display = "none";
+
+
+yard1.addEventListener("mouseover", function(){
+    yP1.style.display = "block";
+    yP1.classList.add("opacity");
+});
+yard1.addEventListener("mouseleave", function(){
+    yP1.style.display = "none";
+});
+yard1.addEventListener("mousedown", function(){
+    yP1.style.display = "none";
+});
+yard2.addEventListener("mouseover", function(){
+    yP2.style.display = "block";
+    yP2.classList.add("opacity");
+});
+yard2.addEventListener("mouseleave", function(){
+    yP2.style.display = "none";
+});
+yard2.addEventListener("mousedown", function(){
+    yP2.style.display = "none";
+});
+yard3.addEventListener("mouseover", function(){
+    yP3.style.display = "block";
+    yP3.classList.add("opacity");
+});
+yard3.addEventListener("mouseleave", function(){
+    yP3.style.display = "none";
+});
+yard3.addEventListener("mousedown", function(){
+    yP3.style.display = "none";
+});
+yard4.addEventListener("mouseover", function(){
+    yP4.style.display = "block";
+    yP4.classList.add("opacity");
+});
+yard4.addEventListener("mouseleave", function(){
+    yP4.style.display = "none";
+});
+yard4.addEventListener("mousedown", function(){
+    yP4.style.display = "none";
+});
 
 
