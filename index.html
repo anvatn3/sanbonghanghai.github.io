@@ -31,9 +31,9 @@
                     <a href="">Thông Tin Sân</a>
                 </li>
             </ul>
-            <ul class="login-signup">
+            <ul class="sign-in-up">
                 <li>
-                    <a href="">Đăng Ký</a>
+                    <button class="sign-up-btn">Đăng Ký</button>
                 </li>
                 <li>
                     <button class="sign-in-btn">Đăng Nhập</button>
@@ -42,7 +42,7 @@
         </div>
     </div>
     <div class="banner">
-
+        <img src="https://thuvienvector.com/upload/images/items/background-san-bong-da-hieu-ung-dep-file-psd-2046.webp" alt="">
     </div>
     <div class="content">
         <div class="main-content">
@@ -90,10 +90,10 @@
             </ul>
         </div>
     </div>
-    <div id="sign-in" class="show-sign-in">
+    <div id="sign-in" >
         <div class="sign-in-popup">
             <div class="head-sign-in">
-                <i class="fas fa-times x"></i>
+                <i class="fas fa-times x-sign-in"></i>
             </div>
             <div class="content-sign-in">
                 <div class="title-sign-in">
@@ -101,11 +101,48 @@
                 </div>
                 <form id="form-sign-in" action="">
                     <label for="">Hãy đăng nhập để sử dụng dịch vụ</label>
-                    <input type="text" name="username" id="username" placeholder="Tên đăng nhập">
-                    <input type="password" name="password" id="password" placeholder="Mật khẩu">
-                    <input type="submit" value="Đăng nhập" id="submit-sign-in">
-                    <button id="switch-sign-up">Đăng ký mới <i class="fas fa-angle-right"></i></button>
+                    <input type="email" name="username-sign-in" id="username-sign-in" placeholder="Email" required>
+                    <input type="password" name="password-sign-in" id="password-sign-in" placeholder="Mật khẩu" required>
+                    <input type="submit" value="ĐĂNG NHẬP" id="submit-sign-in">
+                    <button type="button" id="switch-sign-up">Đăng ký mới <i class="fas fa-angle-right"></i></button>
                 </form>
+            </div>
+        </div>
+    </div>
+    <div id="sign-up" >
+        <div class="sign-up-popup">
+            <div class="head-sign-up">
+                <i class="fas fa-times x-sign-up"></i>
+            </div>
+            <div class="content-sign-up">
+                <div class="title-sign-up">
+                    Đăng Ký
+                </div>
+                <form id="form-sign-up" action="">
+                    <label for="">Đăng ký tài khoản của bạn</label>
+                    <input type="email" name="username-sign-up" id="username-sign-up" placeholder="Nhập email" required>
+                    <input type="password" name="password-sign-up" id="password-sign-up" placeholder="Nhập mật khẩu" required>
+                    <input type="password" name="password-sign-up-again" id="password-sign-up-again" placeholder="Nhập lại mật khẩu" required>
+                    <div class="captcha">
+                        <input type="text" name="captcha" id="captcha" maxlength="5" placeholder="Nhập mã bên cạnh" required>
+                        <span class="captcha-number"></span>
+                        <button class="reload-btn" type="button" >
+                            <i class="fas fa-sync-alt"></i>
+                        </button>
+                    </div>
+                    <input type="submit" value="ĐĂNG KÝ" id="submit-sign-up">
+                    <button type="button" id="switch-sign-in">Đăng nhập ngay <i class="fas fa-angle-right"></i></button>
+                </form>
+                <div class="social">
+                    <a class="fb-sign-up" href="">
+                        <i class="fab fa-facebook"></i>
+                        Đăng ký với Facebook
+                    </a>
+                    <a class="gg-sign-up" href="">
+                        <i class="fab fa-google"></i>
+                        Đăng ký với Google
+                    </a>
+                </div>
             </div>
         </div>
     </div>

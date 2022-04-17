@@ -251,7 +251,6 @@ submit1.addEventListener("click", function(){
             alertDate3.style.display = "block";
             alertDate4.style.display = "block";
         }
-     
     }
     else{
         success.classList.add("show");

@@ -7,8 +7,8 @@ body {
     width: 100%;
     height: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* background-color: #2c3e50; */
-    background-image: url(https://sanconhantao.vn/wp-content/uploads/2021/03/ae4b582f18b6e5e8bca7.jpg);
+    background-color: #bdc3c7;
+    /* background-image: url(https://sanconhantao.vn/wp-content/uploads/2021/03/ae4b582f18b6e5e8bca7.jpg); */
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -19,21 +19,24 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000000000;
+    display: flex;
+    margin: 0 auto;
 }
 .head-content {
-    width: 80%;
+    width: 1270px;
     height: 80px;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 ul.main-head {
-    width: 80%;
+    width: 800px;
     height: 80px;
     display: flex;
     list-style: none;
     align-items: center;
+    margin-right: auto;
 }
 ul.main-head li {
     margin: 0 20px;
@@ -52,24 +55,25 @@ ul.main-head li a {
 ul.main-head li a:hover {
     color: #c0392b;
 }
-ul.login-signup {
-    width: 30%;
+ul.sign-in-up {
+    width: 300px;
     height: 80px;
     display: flex;
     list-style: none;
     align-items: center;
+    margin-left: auto;
 }
-ul.login-signup li {
+ul.sign-in-up li {
     margin: 0 15px;
     font-size: 20px;
 }
-ul.login-signup li a {
+ul.sign-in-up li a {
     text-decoration: none;
     color: #ecf0f1;
     font-weight: 400;
     transition: all 0.25s ease-in-out;
 }
-ul.login-signup li a:hover {
+ul.sign-in-up li a:hover {
     color: #8e44ad;
 }
 #user {
@@ -126,20 +130,31 @@ ul#main-user li:hover {
     border-radius: 5px;
 }
 .banner {
-    width: 100%;
+    width: 80%;
     height: 300px;
-    background-image: url("https://huongxuan.thuathienhue.gov.vn/UploadFiles/TinTuc/2019/6/27/11.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
+    /* background-color: #2c3e50; */
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+}
+.banner img {
+    width: 1270px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
 }
 .content {
-    width: 100%;
-    height: 100%;
-    background-color: #2c3e50;
+    width: 80%;
+    /* height: 100%; */
+    /* background-color: #2c3e50; */
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
 }
 .main-content {
-    width: 80%;
+    width: 1270px;
     height: 100%;
     background-color: #34495e;
     margin: 0 auto;
@@ -147,6 +162,7 @@ ul#main-user li:hover {
 }
 ul.home {
     list-style: none;
+    margin: 0 auto;
 }
 ul.home li {
     display: flex;
@@ -170,6 +186,7 @@ ul.home li .img-home {
 }
 ul.home li .img-home img {
     width: 70%;
+    height: 90%;
     position: relative;
     top: 50%;
     left: 50%;
@@ -178,7 +195,7 @@ ul.home li .img-home img {
 #content {
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: 1270px;
     height: 640px;
     background-color: #2c3e50;
     margin: 10px auto;
@@ -595,6 +612,8 @@ option {
     pointer-events: none;
     opacity: 0;
     transition: all 0.25s ease-in-out;
+    z-index: 100000000000000000;
+
 }
 #success.show {
     pointer-events: all;
@@ -623,6 +642,7 @@ option {
     left: 50%;
     transform: translate(-50%, 100%);
     border-radius: 5px;
+
 }
 .head-success {
     height: 20%;
@@ -675,6 +695,9 @@ option {
     border-radius: 5px;
     overflow: auto;
 
+}
+#table-calendar::-webkit-scrollbar {
+    width: 0;
 }
 .table-calendar {
     width: 100%;
@@ -741,7 +764,7 @@ td, th{
 .edit:hover, .cancel:hover {
     background-color: #2c3e50;
 }
-.sign-in-btn {
+.sign-in-btn, .sign-up-btn {
     background: transparent;
     border: 0;
     outline: 0;
@@ -752,13 +775,13 @@ td, th{
     transition: all 0.25s ease-in-out;
 
 }
-.sign-in-btn:hover {
+.sign-in-btn:hover, .sign-up-btn:hover {
     color: #8e44ad;
 }
-#sign-in {
+#sign-in, #sign-up {
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: fixed;
     top: 0;
@@ -767,39 +790,39 @@ td, th{
     z-index: 100000000000000000;
     transition: all 0.25s ease-in-out;
 }
-#sign-in.show-sign-in {
+#sign-in.show-sign-in, #sign-up.show-sign-up {
     pointer-events: all;
     opacity: 1;
     
 }
-.sign-in-popup {
+.sign-in-popup, .sign-up-popup {
     width: 400px;
-    height: 450px;
+    height: 550px;
     background-color: #2c3e50;
     position: relative;
-    top: 0px;
+    top: -10%;
     left: 50%;
     transform: translate(-50%, 25%);
     border-radius: 5px;
 }
-.head-sign-in {
+.head-sign-in, .head-sign-up {
     height: 10%;
     width: 100%;
     direction: rtl;
     padding: 0px 10px;
     font-size: 30px;
 }
-.head-sign-in i {
+.head-sign-in i, .head-sign-up i {
     cursor: pointer;
     transition: all 0.25s ease-in-out;
 
 }
-.head-sign-in i:hover {
+.head-sign-in i:hover, .head-sign-up i:hover {
     color: #c0392b;
 }
-.content-sign-in {
+.content-sign-in, .content-sign-up {
     width: 100%;
-    height: 80%;
+    height: 90%;
     font-size: 30px;
     font-weight: 700;
     text-align: center;
@@ -807,14 +830,17 @@ td, th{
     color: #ecf0f1;
 
 } 
-#form-sign-in {
+#form-sign-in, #form-sign-up {
     width: 100%;
     padding: 5px 20px;
 }
 #form-sign-in label {
     color: #3498db;
 }
-#form-sign-in input {
+#form-sign-up label {
+    color: #2ecc71;
+}
+#form-sign-in input, #form-sign-up input {
     width: 100%;
     height: 40px;
     background-color: #ecf0f1;
@@ -832,10 +858,16 @@ td, th{
     color: #ecf0f1;
     cursor: pointer;
 }
-#form-sign-in #submit-sign-in:hover {
+#form-sign-up #submit-sign-up {
+    background-color: #2ecc71;
+    color: #ecf0f1;
+    cursor: pointer;
+}
+#form-sign-in #submit-sign-in:hover,
+#form-sign-up #submit-sign-up:hover {
     opacity: 0.7;
 }
-#switch-sign-up {
+#switch-sign-up, #switch-sign-in {
     width: 100%;
     height: 40px;
     background: transparent;
@@ -848,8 +880,74 @@ td, th{
     cursor: pointer;
     align-items: center;
 }
-#switch-sign-up:hover {
+#switch-sign-up:hover, #switch-sign-in:hover {
     background: #34495e;
+}
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    font-size: 15px;
+    border-top: 1px solid #bdc3c7;
+}
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: 200;
+    border-radius: 5px;
+}
+.social a i {
+    margin-right: 5px;
+}
+.fb-sign-up:hover {
+    background-color: rgba(0, 0, 255, 0.6);
+}
+.gg-sign-up:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.captcha {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.captcha #captcha {
+    width: 50%;
+    margin-bottom: 0;
+
+}
+.captcha .captcha-number {
+    width: 40%;
+    background-color: #1abc9c;
+    color: #16a085;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+.captcha .reload-btn {
+    width: 10%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #2ecc71;
+    font-size: 15px;
+}
+.captcha .reload-btn:hover {
+    background-color: #34495e;
 }
 /* .btn-confirm {
     display: flex;
