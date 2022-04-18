@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sân bóng Hàng Hải</title>
+    <link rel="stylesheet" href="..\sbhh.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+<body>
+    <div id="head">
+        <div class="head-content">
+            <ul class="main-head">
+                <li>
+                    <a href="index.html">
+                        <img src="..\img\logo Hàng Hải.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">Trang Chủ</a>
+                </li>
+                <li>
+                    <a href="thue-san.html">Thuê Sân</a>
+                </li>
+                <li>
+                    <a href="">Giải Đấu</a>
+                </li>
+                <li>
+                    <a href="">Thông Tin Sân</a>
+                </li>
+            </ul>
+            <div id="user">
+                <ul id="main-user">
+                    <li><i class="far fa-user-circle"></i>Hồ sơ</li>
+                    <li>
+                        <a href="lich-dat.html">
+                        <i class="far fa-calendar-check"></i>Lịch đặt</li>
+                        </a>
+                    <li><i class="far fa-credit-card"></i>Nạp tiền</li>
+                    <li><i class="fas fa-sign-out-alt"></i>Đăng Xuất</li>
+                </ul>
+            </div>
+            <!-- <ul class="login-signup">
+                <li>
+                    <a href="">Đăng Ký</a>
+                </li>
+                <li>
+                    <a href="">Đăng Nhập</a>
+                </li>
+            </ul> -->
+        </div>
+    </div>
+    <div id="content">
+        <div class="payment left-content">
+            <div class="head-payment">Thanh Toán</div>
+            <div class="main-payment">
+                <div class="payment-method">
+                    <div class="head-method">Chọn phương thức thanh toán</div>
+                    
+                    <div class="select-method">
+                        <label for="momo" class="pa-me">
+                            <input type="radio" name="pa-me" id="momo" class="radio-input">
+                            <div class="radio-custom">MOMO</div>
+                        
+                        </label>
+                        <label for="zalopay" class="pa-me">
+                            <input type="radio" name="pa-me" id="zalopay" class="radio-input">
+                            <div class="radio-custom">ZaloPay</div>
+                        
+                        </label>
+                        <label for="atm" class="pa-me">
+                            <input type="radio" name="pa-me" id="atm" class="radio-input">
+                            <div class="radio-custom">Thẻ ATM nội địa/ Internet Banking</div>
+                        
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="infor right-content">
+            <div class="head-infor">Thông Tin</div>
+            <div class="main-infor">
+
+            </div>
+        </div>
+    </div>
+    <div id="success">
+        <div class="success-popup">
+            <div class="head-success">
+                <i class="fas fa-times x"></i>
+            </div>
+            <div class="content-success">
+                <p>Đặt Lịch Thành Công!!!<i class="fas fa-check-circle"></i></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="thanh-toan.js"></script>
+</body>
+</html>

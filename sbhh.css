@@ -203,36 +203,51 @@ ul.home li .img-home img {
     box-shadow: 0px 0px 15px 8px #000000; /* x y blur scale color  */
     
 }
-.selection {
+.left-content {
     width: 600px;
     height: 580px;
-    background-color: #2ecc71;
+    /* background-color: #2ecc71; */
     padding: 10px;
     margin-right: 5px;
     margin-left: auto;
     transition: all 0.25s ease-in-out;
 
 }
-.selection:hover {
+.selection.left-content {
+    background-color: #2ecc71;
+
+}
+.payment {
+    background-color: #f1c40f;
+
+}
+.left-content:hover {
     box-shadow: 0px 0px 15px 8px #ffffff; /* x y blur scale color  */
 
 }
-.diagram {
+.right-content {
     display: block;
     width: 450px;
     height: 580px;
-    background-color: #3498db;
     padding: 10px;
     margin-left: 5px;
     margin-right: auto;
     transition: all 0.25s ease-in-out;
 
 }
-.diagram:hover {
+.diagram {
+    background-color: #3498db;
+
+}
+.infor {
+    background-color: #ecf0f1;
+
+}
+.right-content:hover {
     box-shadow: 0px 0px 15px 8px #ffffff; /* x y blur scale color  */
 
 }
-.head-diagram, .head-selection, .head-calendar {
+.head-diagram, .head-selection, .head-calendar, .head-payment, .head-infor {
     width: 100%;
     height: 10%;
     background-color: #34495e;
@@ -242,7 +257,7 @@ ul.home li .img-home img {
     font-size: 25px;
     font-weight: 600;
 }
-.main-diagram, .main-selection {
+.main-diagram, .main-selection, .main-payment, .main-infor {
     width: 100%;
     height: 80%;
     margin: 10px auto;
@@ -432,7 +447,7 @@ label {
 #username2, #email2,
 #username3, #email3,
 #username4, #email4 {
-    width: 90%;
+    width: 80%;
     height: 8%;
     font-size: 18px;
     /* margin-bottom: 5px; */
@@ -682,7 +697,7 @@ option {
     height: 80%;
     font-size: 30px;
     text-align: center;
-    padding: 40px 50px;
+    padding: 5px 50px;
     color: #ecf0f1;
 
 }
@@ -691,6 +706,22 @@ option {
     font-size: 50px;
     color: #2ecc71;
     margin-top: 20px;
+}
+.pay {
+    display: block;
+    width: 200px;
+    height: 50px;
+    border: 2px solid #1abc9c;
+    background-color: #34495e;
+    padding: 5px;
+    margin: 20px auto 0 auto;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ecf0f1;
+    transition: all 0.25s ease-in-out;
+}
+.pay:hover {
+    background-color: #1abc9c;
 }
 .calendar {
     width: 90%;
@@ -966,6 +997,56 @@ td, th{
 }
 .captcha .reload-btn:hover {
     background-color: #34495e;
+}
+.payment-method {
+    width: 90%;
+    height: 30%;
+    margin: 10px auto;
+    border-bottom: 2px solid #ecf0f1;
+}
+.head-method {
+    width: 100%;
+    height: 20%;
+    font-size: 25px;
+    font-weight: 700;
+    color: #ecf0f1;
+    margin-bottom: 10px;
+}
+.select-method {
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pa-me {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+.radio-input {
+    display: none;
+}
+.radio-custom { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #3498db;
+    font-weight: 700;
+    padding: 5px;
+    width: 160px;
+    height: 70px;
+    border: 2px solid #f1c40f;
+    border-radius: 5px;
+}
+.radio-custom:hover {
+    background-color: #f1c40f;
+}
+.radio-input:checked + .radio-custom {
+    background-color: #f1c40f;
 }
 /* .btn-confirm {
     display: flex;

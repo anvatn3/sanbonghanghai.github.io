@@ -420,6 +420,7 @@ date4.onfocus = function() {
 
 // const user = document.getElementById("user");
 
+// mở user 
 const userSelect = document.getElementById("main-user");
 
 userSelect.style.display = "none";
@@ -439,6 +440,7 @@ window.onload = function(){
         }
     };
 };
+
 
 const yP1 = document.querySelector(".y-p1");
 const yP2 = document.querySelector(".y-p2");
