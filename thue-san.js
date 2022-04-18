@@ -167,20 +167,21 @@ const alertDate3 = document.querySelector(".alertdate3");
 const alertDate4 = document.querySelector(".alertdate4");
 
 const username1 = document.getElementById("username1");
-const email1 = document.getElementById("email1");
+// const email1 = document.getElementById("email1");
 const date1 = document.getElementById("date1");
 
 const username2 = document.getElementById("username2");
-const email2 = document.getElementById("email2");
+// const email2 = document.getElementById("email2");
 const date2 = document.getElementById("date2");
 
 const username3 = document.getElementById("username3");
-const email3 = document.getElementById("email3");
+// const email3 = document.getElementById("email3");
 const date3 = document.getElementById("date3");
 
 const username4 = document.getElementById("username4");
-const email4 = document.getElementById("email4");
+// const email4 = document.getElementById("email4");
 const date4 = document.getElementById("date4");
+
 
 
 let today = new Date();
@@ -196,19 +197,23 @@ if (mm < 10) {
 } 
     
 today = yyyy + '-' + mm + '-' + dd;
-document.getElementById("date1").setAttribute("min", today);
-document.getElementById("date2").setAttribute("min", today);
-document.getElementById("date3").setAttribute("min", today);
-document.getElementById("date4").setAttribute("min", today);
+date1.setAttribute("min", today);
+date2.setAttribute("min", today);
+date3.setAttribute("min", today);
+date4.setAttribute("min", today);
 
 let lastday = function(y,m){
     return  new Date(y, m +1, 0).getDate();
+
 }
+
 let ld = yyyy + '-' + mm + '-' + lastday(yyyy, mm-1);
-document.getElementById("date1").setAttribute("max", ld);
-document.getElementById("date2").setAttribute("max", ld);
-document.getElementById("date3").setAttribute("max", ld);
-document.getElementById("date4").setAttribute("max", ld);
+
+date1.setAttribute("max", ld);
+date2.setAttribute("max", ld);
+date3.setAttribute("max", ld);
+date4.setAttribute("max", ld);
+
 
 // success.style.display = "none";
 
@@ -265,6 +270,7 @@ submit1.addEventListener("click", function(){
         alertDate3.style.display = "none";
         alertDate4.style.display = "none";
     }
+    // checkInputDate1();
 });
 submit2.addEventListener("click", function(){
     if(username2.value === "" || date2.value === ""){
