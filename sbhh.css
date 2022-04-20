@@ -132,13 +132,15 @@ ul#main-user li {
     /* padding: 5px; */
     /* border-bottom: 1px solid #34495e; */
     color: #2c3e50;
-    display: flex;
-    align-items: center;
+    
 }
 ul#main-user li a {
+    width: 100%;
+    height: 100%;
     text-decoration: none;
     color: #2c3e50;
-
+    display: flex;
+    align-items: center;
 }
 ul#main-user li i{
     margin-left: 5px;
