@@ -1,60 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sân bóng Hàng Hải</title>
     <link rel="stylesheet" href="..\sbhh.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
     <div id="head">
-        <div class="head-content">
-            <ul class="main-head">
-                <li>
-                    <a href="index.html">
-                        <img src="..\img\logo Hàng Hải.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="thue-san.html">Thuê Sân</a>
-                </li>
-                <li>
-                    <a href="">Giải Đấu</a>
-                </li>
-                <li>
-                    <a href="">Thông Tin Sân</a>
-                </li>
-            </ul>
-            <a href="" class="money" title="Nạp Tiền">500.000 VND</a>
-            <div id="user">
-                <ul id="main-user">
-                    <li>
-                        <a href="ho-so.html">
-                            <i class="far fa-user-circle"></i>Hồ sơ
-                        </a>
-                    </li>
-                    <li>
-                        <a href="lich-dat.html">
-                            <i class="far fa-calendar-check"></i>Lịch đặt
-                        </a>
-                    </li>
-                        
-                    <li>
-                        <a href="nap-tien.html">
-                            <i class="far fa-credit-card"></i>Nạp tiền
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index.html">
-                            <i class="fas fa-sign-out-alt"></i>Đăng Xuất
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- <ul class="login-signup">
+      <div class="head-content">
+        <ul class="main-head">
+          <li>
+            <a href="index.html">
+              <img src="..\img\logo Hàng Hải.png" />
+            </a>
+          </li>
+          <li>
+            <a href="thue-san.html">Thuê Sân</a>
+          </li>
+          <li>
+            <a href="">Giải Đấu</a>
+          </li>
+          <li>
+            <a href="">Thông Tin Sân</a>
+          </li>
+        </ul>
+        <a href="nap-tien.html" class="money" title="Nạp Tiền">500.000 VND</a>
+        <div id="user">
+          <ul id="main-user">
+            <li>
+              <a href="ho-so.html"> <i class="far fa-user-circle"></i>Hồ sơ </a>
+            </li>
+            <li>
+              <a href="lich-dat.html">
+                <i class="far fa-calendar-check"></i>Lịch đặt
+              </a>
+            </li>
+
+            <li>
+              <a href="nap-tien.html">
+                <i class="far fa-credit-card"></i>Nạp tiền
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+                <i class="fas fa-sign-out-alt"></i>Đăng Xuất
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- <ul class="login-signup">
                 <li>
                     <a href="">Đăng Ký</a>
                 </li>
@@ -62,406 +62,436 @@
                     <a href="">Đăng Nhập</a>
                 </li>
             </ul> -->
-        </div>
+      </div>
     </div>
     <div id="content">
-        <div class="selection left-content">
-            <div class="head-selection">Đặt Lịch</div>
-            <div class="main-selection">
-                <!-- invoice-infor1 -->
-                <form action="invoice.php" class="invoice-infor1" name="invoice1" id="invoice1">
-                    <div class="head-form">Sân 1</div>
-                    <!-- Tên của bạn -->
-                    <span class="username">
-                        <i class="fas fa-user"></i>
-                        <input type="text" name="username1" id="username1" placeholder="Nhập tên" >
-                        <div class="line-user"></div>
-                        <div class="alertname1">
-                            Vui lòng điền thông tin!!!
-                        </div>
-                    </span>
-                    <!-- email -->
-                    <!-- <span class="email">
+      <div class="selection left-content">
+        <div class="head-selection">Đặt Lịch</div>
+        <div class="main-selection">
+          <!-- invoice-infor1 -->
+          <form
+            action="invoice.php"
+            class="invoice-infor1"
+            name="invoice1"
+            id="invoice1"
+          >
+            <div class="head-form">Sân 1</div>
+            <!-- Tên của bạn -->
+            <span class="username">
+              <i class="fas fa-user"></i>
+              <input
+                type="text"
+                name="username1"
+                id="username1"
+                placeholder="Nhập tên"
+              />
+              <div class="line-user"></div>
+              <div class="alertname1">Vui lòng điền thông tin!!!</div>
+            </span>
+            <!-- email -->
+            <!-- <span class="email">
                         <i class="fas fa-envelope"></i>
                         <input type="email" name="email" id="email1" placeholder="Nhập email" >
                         <div class="line-email"></div>
                     </span> -->
-                    <label for="">Ngày thuê :</label><br>
-                    <div class="day">
-                        <i class="fas fa-calendar-alt"></i>
-                        <span class="date">
-                            <input type="date" name="date" id="date1" min="2022-04-10" max="2022-04-30" >
-                            <div class="mask-date"></div>
-                        </span>
-                        <div class="alertdate1">
-                            Vui lòng điền thông tin!!!
-                        </div>
-                    </div>
-                    <label for="">Thời gian thuê :</label> 
-                    <i class="fas fa-clock"></i>
-                    <label for="">Từ</label>
-                    <span class="timestart" >
-                        <select onclick="priceChange1()" name="timestart" id="timestart1">
-                            <!-- <option value="1">1</option>
+            <label for="">Ngày thuê :</label><br />
+            <div class="day">
+              <i class="fas fa-calendar-alt"></i>
+              <span class="date">
+                <input
+                  type="date"
+                  name="date"
+                  id="date1"
+                  min="2022-04-10"
+                  max="2022-04-30"
+                />
+                <div class="mask-date"></div>
+              </span>
+              <div class="alertdate1">Vui lòng điền thông tin!!!</div>
+            </div>
+            <label for="">Thời gian thuê :</label>
+            <i class="fas fa-clock"></i>
+            <label for="">Từ</label>
+            <span class="timestart">
+              <select onclick="priceChange1()" name="timestart" id="timestart1">
+                <!-- <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
                             <option value="6">6</option> -->
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                            <!-- <option value="11">11</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <!-- <option value="11">11</option>
                             <option value="12">12</option>
                             <option value="13">13</option> -->
-                            <option value="14">14</option>
-                            <option value="15">15</option>
-                            <option value="16">16</option>
-                            <option value="17">17</option>
-                            <option value="18">18</option>
-                            <option value="19">19</option>
-                            <option value="20">20</option>
-                            <option value="21">21</option>
-                            <!-- <option value="22">22</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <!-- <option value="22">22</option>
                             <option value="23">23</option>
                             <option value="24">24</option> -->
-                        </select>
-                    </span>
-                    <label for="">giờ (đá trong vòng 1 tiếng)</label><br>
-                    <div class="price1">Giá : 400k VND</div>
-                    <label for="">Lời nhắn :</label>
-                    <i class="fas fa-paper-plane"></i>
-                    <span class="message">
-                        <input type="text" id="message" placeholder="Nhập lời nhắn">
-                        <div class="line-message"></div>
-                    </span>
-                    
-                    <div class="btn">
-                        <span class="reset">
-                            <button id="reset" type="reset">Đặt Lại</button>
-                        </span>
-                        <span class="submit">
-                            <button type="submit" name="" id="submit1">Xác Nhận </button>
-                            <!-- <input type="submit" value="Xác Nhận" name="" id="submit1"> -->
-                        </span>
-                    </div>
-                    
-                </form>
-                
-                <!-- invoice-infor2 -->
-                <form action="" class="invoice-infor2" name="invoice2" id="invoice2">
-                    <div class="head-form">Sân 2</div>
-                    <!-- Tên của bạn -->
-                    <span class="username">
-                        <i class="fas fa-user"></i>
-                        <input type="text" name="username" id="username2" placeholder="Nhập tên" >
-                        <div class="line-user"></div>
-                        <div class="alertname2">
-                            Vui lòng điền thông tin!!!
-                        </div>
-                    </span>
-                    <!-- email -->
-                    <!-- <span class="email">
+              </select>
+            </span>
+            <label for="">giờ (đá trong vòng 1 tiếng)</label><br />
+            <div class="price1">Giá : 400k VND</div>
+            <label for="">Lời nhắn :</label>
+            <i class="fas fa-paper-plane"></i>
+            <span class="message">
+              <input type="text" id="message" placeholder="Nhập lời nhắn" />
+              <div class="line-message"></div>
+            </span>
+
+            <div class="btn">
+              <span class="reset">
+                <button id="reset" type="reset">Đặt Lại</button>
+              </span>
+              <span class="submit">
+                <button type="submit" name="" id="submit1">Xác Nhận</button>
+                <!-- <input type="submit" value="Xác Nhận" name="" id="submit1"> -->
+              </span>
+            </div>
+          </form>
+
+          <!-- invoice-infor2 -->
+          <form action="" class="invoice-infor2" name="invoice2" id="invoice2">
+            <div class="head-form">Sân 2</div>
+            <!-- Tên của bạn -->
+            <span class="username">
+              <i class="fas fa-user"></i>
+              <input
+                type="text"
+                name="username"
+                id="username2"
+                placeholder="Nhập tên"
+              />
+              <div class="line-user"></div>
+              <div class="alertname2">Vui lòng điền thông tin!!!</div>
+            </span>
+            <!-- email -->
+            <!-- <span class="email">
                         <i class="fas fa-envelope"></i>
                         <input type="email" name="email" id="email2" placeholder="Nhập email" >
                         <div class="line-email"></div>
                     </span> -->
-                    <label for="">Ngày thuê :</label><br>
-                    <div class="day">
-                        <i class="fas fa-calendar-alt"></i>
-                        <span class="date">
-                            <input type="date" name="date" id="date2" min="2022-04-10" max="2022-04-30" >
-                            <div class="mask-date"></div>
-                        </span>
-                        <div class="alertdate2">
-                            Vui lòng điền thông tin!!!
-                        </div>
-                    </div>
-                    <label for="">Thời gian thuê :</label>
-                    <i class="fas fa-clock"></i>
-                    <label for="">Từ</label>
-                    <span class="timestart">
-                        <select onclick="priceChange2()" name="timestart" id="timestart2">
-                            <!-- <option value="1">1</option>
+            <label for="">Ngày thuê :</label><br />
+            <div class="day">
+              <i class="fas fa-calendar-alt"></i>
+              <span class="date">
+                <input
+                  type="date"
+                  name="date"
+                  id="date2"
+                  min="2022-04-10"
+                  max="2022-04-30"
+                />
+                <div class="mask-date"></div>
+              </span>
+              <div class="alertdate2">Vui lòng điền thông tin!!!</div>
+            </div>
+            <label for="">Thời gian thuê :</label>
+            <i class="fas fa-clock"></i>
+            <label for="">Từ</label>
+            <span class="timestart">
+              <select onclick="priceChange2()" name="timestart" id="timestart2">
+                <!-- <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
                             <option value="6">6</option> -->
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                            <!-- <option value="11">11</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <!-- <option value="11">11</option>
                             <option value="12">12</option>
                             <option value="13">13</option> -->
-                            <option value="14">14</option>
-                            <option value="15">15</option>
-                            <option value="16">16</option>
-                            <option value="17">17</option>
-                            <option value="18">18</option>
-                            <option value="19">19</option>
-                            <option value="20">20</option>
-                            <option value="21">21</option>
-                            <!-- <option value="22">22</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <!-- <option value="22">22</option>
                             <option value="23">23</option>
                             <option value="24">24</option> -->
-                        </select>
-                    </span>
-                    <label for="">giờ (đá trong vòng 1 tiếng)</label><br>
-                    <div class="price2">Giá : 400k VND</div>
-                    <label for="">Lời nhắn :</label>
-                    <i class="fas fa-paper-plane"></i>
-                    <span class="message">
-                        <input type="text" id="message" placeholder="Nhập lời nhắn">
-                        <div class="line-message"></div>
-                    </span>
-                    <div class="btn">
-                        <span class="reset">
-                            <button onclick="resetPrice()" id="reset" type="reset">Đặt Lại</button>
-                        </span>
-                        <span class="submit">
-                            <button type="submit" name="" id="submit2">Xác Nhận</button>
-                            <!-- <input type="submit" value="Xác Nhận" name="" id="submit2"> -->
-                        </span>
-                    </div>
-                </form>
+              </select>
+            </span>
+            <label for="">giờ (đá trong vòng 1 tiếng)</label><br />
+            <div class="price2">Giá : 400k VND</div>
+            <label for="">Lời nhắn :</label>
+            <i class="fas fa-paper-plane"></i>
+            <span class="message">
+              <input type="text" id="message" placeholder="Nhập lời nhắn" />
+              <div class="line-message"></div>
+            </span>
+            <div class="btn">
+              <span class="reset">
+                <button onclick="resetPrice()" id="reset" type="reset">
+                  Đặt Lại
+                </button>
+              </span>
+              <span class="submit">
+                <button type="submit" name="" id="submit2">Xác Nhận</button>
+                <!-- <input type="submit" value="Xác Nhận" name="" id="submit2"> -->
+              </span>
+            </div>
+          </form>
 
-                <!-- invoice-infor3 -->
-                <form action="" class="invoice-infor3" name="invoice3" id="invoice3">
-                    <div class="head-form">Sân 3</div>
-                    <!-- Tên của bạn -->
-                    <span class="username">
-                        <i class="fas fa-user"></i>
-                        <input type="text" name="username" id="username3" placeholder="Nhập tên" >
-                        <div class="line-user"></div>
-                        <div class="alertname3">
-                            Vui lòng điền thông tin!!!
-                        </div>
-                    </span>
-                    <!-- email -->
-                    <!-- <span class="email">
+          <!-- invoice-infor3 -->
+          <form action="" class="invoice-infor3" name="invoice3" id="invoice3">
+            <div class="head-form">Sân 3</div>
+            <!-- Tên của bạn -->
+            <span class="username">
+              <i class="fas fa-user"></i>
+              <input
+                type="text"
+                name="username"
+                id="username3"
+                placeholder="Nhập tên"
+              />
+              <div class="line-user"></div>
+              <div class="alertname3">Vui lòng điền thông tin!!!</div>
+            </span>
+            <!-- email -->
+            <!-- <span class="email">
                         <i class="fas fa-envelope"></i>
                         <input type="email" name="email" id="email3" placeholder="Nhập email" >
                         <div class="line-email"></div>
                     </span> -->
-                    <label for="">Ngày thuê :</label><br>
-                    <div class="day">
-                        <i class="fas fa-calendar-alt"></i>
-                        <span class="date">
-                            <input type="date" name="date" id="date3" min="2022-04-10" max="2022-04-30" >
-                            <div class="mask-date"></div>
-                        </span>
-                        <div class="alertdate3">
-                            Vui lòng điền thông tin!!!
-                        </div>
-                    </div>
-                    <label for="">Thời gian thuê :</label>
-                    <i class="fas fa-clock"></i>
-                    <label for="">Từ</label>
-                    <span class="timestart">
-                        <select onclick="priceChange3()" name="timestart" id="timestart3">
-                            <!-- <option value="1">1</option>
+            <label for="">Ngày thuê :</label><br />
+            <div class="day">
+              <i class="fas fa-calendar-alt"></i>
+              <span class="date">
+                <input
+                  type="date"
+                  name="date"
+                  id="date3"
+                  min="2022-04-10"
+                  max="2022-04-30"
+                />
+                <div class="mask-date"></div>
+              </span>
+              <div class="alertdate3">Vui lòng điền thông tin!!!</div>
+            </div>
+            <label for="">Thời gian thuê :</label>
+            <i class="fas fa-clock"></i>
+            <label for="">Từ</label>
+            <span class="timestart">
+              <select onclick="priceChange3()" name="timestart" id="timestart3">
+                <!-- <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
                             <option value="6">6</option> -->
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                            <!-- <option value="11">11</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <!-- <option value="11">11</option>
                             <option value="12">12</option>
                             <option value="13">13</option> -->
-                            <option value="14">14</option>
-                            <option value="15">15</option>
-                            <option value="16">16</option>
-                            <option value="17">17</option>
-                            <option value="18">18</option>
-                            <option value="19">19</option>
-                            <option value="20">20</option>
-                            <option value="21">21</option>
-                            <!-- <option value="22">22</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <!-- <option value="22">22</option>
                             <option value="23">23</option>
                             <option value="24">24</option> -->
-                        </select>
-                    </span>
-                    <label for="">giờ (đá trong vòng 1 tiếng)</label><br>
-                    <div class="price3">Giá : 400k VND</div>
-                    <label for="">Lời nhắn :</label>
-                    <i class="fas fa-paper-plane"></i>
-                    <span class="message">
-                        <input type="text" id="message" placeholder="Nhập lời nhắn">
-                        <div class="line-message"></div>
-                    </span>
-                    <div class="btn">
-                        <span class="reset">
-                            <button onclick="resetPrice()" id="reset" type="reset">Đặt Lại</button>
-                        </span>
-                        <span class="submit">
-                            <button type="submit" name="" id="submit3">Xác Nhận</button>
-                            <!-- <input type="submit" value="Xác Nhận" name="" id="submit3"> -->
-                        </span>
-                    </div>
-                </form>
+              </select>
+            </span>
+            <label for="">giờ (đá trong vòng 1 tiếng)</label><br />
+            <div class="price3">Giá : 400k VND</div>
+            <label for="">Lời nhắn :</label>
+            <i class="fas fa-paper-plane"></i>
+            <span class="message">
+              <input type="text" id="message" placeholder="Nhập lời nhắn" />
+              <div class="line-message"></div>
+            </span>
+            <div class="btn">
+              <span class="reset">
+                <button onclick="resetPrice()" id="reset" type="reset">
+                  Đặt Lại
+                </button>
+              </span>
+              <span class="submit">
+                <button type="submit" name="" id="submit3">Xác Nhận</button>
+                <!-- <input type="submit" value="Xác Nhận" name="" id="submit3"> -->
+              </span>
+            </div>
+          </form>
 
-                <!-- invoice-infor4 -->
-                <form action="" class="invoice-infor4" name="invoice4" id="invoice4">
-                    <div class="head-form">Sân 4</div>
-                    <!-- Tên của bạn -->
-                    <span class="username">
-                        <i class="fas fa-user"></i>
-                        <input type="text" name="username" id="username4" placeholder="Nhập tên" >
-                        <div class="line-user"></div>
-                        <div class="alertname4">
-                            Vui lòng điền thông tin!!!
-                        </div>
-                    </span>
-                    <!-- email -->
-                    <!-- <span class="email">
+          <!-- invoice-infor4 -->
+          <form action="" class="invoice-infor4" name="invoice4" id="invoice4">
+            <div class="head-form">Sân 4</div>
+            <!-- Tên của bạn -->
+            <span class="username">
+              <i class="fas fa-user"></i>
+              <input
+                type="text"
+                name="username"
+                id="username4"
+                placeholder="Nhập tên"
+              />
+              <div class="line-user"></div>
+              <div class="alertname4">Vui lòng điền thông tin!!!</div>
+            </span>
+            <!-- email -->
+            <!-- <span class="email">
                         <i class="fas fa-envelope"></i>
                         <input type="email" name="email" id="email4" placeholder="Nhập email" >
                         <div class="line-email"></div>
                     </span> -->
-                    <label for="">Ngày thuê :</label><br>
-                    <div class="day">
-                        <i class="fas fa-calendar-alt"></i>
-                        <span class="date">
-                            <input type="date" name="date" id="date4" min="2022-04-10" max="2022-04-30"  >
-                            <div class="mask-date"></div>
-                        </span>
-                        <div class="alertdate4">
-                            Vui lòng điền thông tin!!!
-                        </div>
-                    </div>
-                    <label for="">Thời gian thuê :</label>
-                    <i class="fas fa-clock"></i>
-                    <label for="">Từ</label>
-                    <span class="timestart">
-                        <select onclick="priceChange4()" name="timestart" id="timestart4">
-                            <!-- <option value="1">1</option>
+            <label for="">Ngày thuê :</label><br />
+            <div class="day">
+              <i class="fas fa-calendar-alt"></i>
+              <span class="date">
+                <input
+                  type="date"
+                  name="date"
+                  id="date4"
+                  min="2022-04-10"
+                  max="2022-04-30"
+                />
+                <div class="mask-date"></div>
+              </span>
+              <div class="alertdate4">Vui lòng điền thông tin!!!</div>
+            </div>
+            <label for="">Thời gian thuê :</label>
+            <i class="fas fa-clock"></i>
+            <label for="">Từ</label>
+            <span class="timestart">
+              <select onclick="priceChange4()" name="timestart" id="timestart4">
+                <!-- <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
                             <option value="6">6</option> -->
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                            <!-- <option value="11">11</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <!-- <option value="11">11</option>
                             <option value="12">12</option>
                             <option value="13">13</option> -->
-                            <option value="14">14</option>
-                            <option value="15">15</option>
-                            <option value="16">16</option>
-                            <option value="17">17</option>
-                            <option value="18">18</option>
-                            <option value="19">19</option>
-                            <option value="20">20</option>
-                            <option value="21">21</option>
-                            <!-- <option value="22">22</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <!-- <option value="22">22</option>
                             <option value="23">23</option>
                             <option value="24">24</option> -->
-                        </select>
-                    </span>
-                    <label for="">giờ (đá trong vòng 1 tiếng)</label><br>
-                    <div class="price4">Giá : 400k VND</div>
-                    <label for="">Lời nhắn :</label>
-                    <i class="fas fa-paper-plane"></i>
-                    <span class="message">
-                        <input type="text" id="message" placeholder="Nhập lời nhắn">
-                        <div class="line-message"></div>
-                    </span>
-                    <div class="btn">
-                        <span class="reset">
-                            <button onclick="resetPrice()" id="reset" type="reset">Đặt Lại</button>
-                        </span>
-                        <span class="submit">
-                            <button type="submit" name="" id="submit4">Xác Nhận</button>
-                            <!-- <input type="submit" value="Xác Nhận" name="" id="submit4"> -->
-                        </span>
-                    </div>
-                </form>
-
-                <div class="yard-preview">
-                    <img src="img\sân 1.jpg" alt="" class="y-p1">
-                    <img src="img\sân 2.jpg" alt="" class="y-p2">
-                    <img src="img\sân 3.jpg" alt="" class="y-p3">
-                    <img src="img\sân 4.jpg" alt="" class="y-p4">
-
-                </div>
+              </select>
+            </span>
+            <label for="">giờ (đá trong vòng 1 tiếng)</label><br />
+            <div class="price4">Giá : 400k VND</div>
+            <label for="">Lời nhắn :</label>
+            <i class="fas fa-paper-plane"></i>
+            <span class="message">
+              <input type="text" id="message" placeholder="Nhập lời nhắn" />
+              <div class="line-message"></div>
+            </span>
+            <div class="btn">
+              <span class="reset">
+                <button onclick="resetPrice()" id="reset" type="reset">
+                  Đặt Lại
+                </button>
+              </span>
+              <span class="submit">
+                <button type="submit" name="" id="submit4">Xác Nhận</button>
+                <!-- <input type="submit" value="Xác Nhận" name="" id="submit4"> -->
+              </span>
             </div>
+          </form>
+
+          <div class="yard-preview">
+            <img src="img\sân 1.jpg" alt="" class="y-p1" />
+            <img src="img\sân 2.jpg" alt="" class="y-p2" />
+            <img src="img\sân 3.jpg" alt="" class="y-p3" />
+            <img src="img\sân 4.jpg" alt="" class="y-p4" />
+          </div>
         </div>
-        
-        <div class="diagram right-content">
-            <div class="head-diagram">Chọn Sân</div>
-            <div class="main-diagram">
-                
-                <div class="stand">
-                    <i class="fas fa-grip-lines-vertical"></i>
-                    Khán<br>Đài
-                </div>
-                <div class="yard">
-                    <div class="gate1">
-                        Cổng
-                        <i class="fas fa-torii-gate"></i>
-                    </div>
+      </div>
 
-                    <div class="main-yard">
-                    
-                        <div class="yard1-2">
-                            <div class="yard1">
-                                <div>Sân 1</div>
-                                <div class="select-yard">CHỌN SÂN</div>
-                                <i class="fas fa-futbol iconball"></i>
-                            </div>
-                            <div class="yard2">
-                                <div>Sân 2</div>
-                                <div class="select-yard">CHỌN SÂN</div>
-                                <i class="fas fa-futbol iconball"></i>
-                            </div>
-                        </div>
-                        <div class="yard3-4">
-                            <div class="yard3">
-                                <div>Sân 3</div>
-                                <div class="select-yard">CHỌN SÂN</div>
-                                <i class="fas fa-futbol iconball"></i>
-                            </div>
-                            <div class="yard4">
-                                <div>Sân 4</div>
-                                <div class="select-yard">CHỌN SÂN</div>
-                                <i class="fas fa-futbol iconball"></i>
-                            </div>
-                        </div>
-                    
-                    </div>
-                </div>
-                <div class="gate2">
-                    <i class="fas fa-torii-gate"></i>
-                    Cổng
-                </div>
-
+      <div class="diagram right-content">
+        <div class="head-diagram">Chọn Sân</div>
+        <div class="main-diagram">
+          <div class="stand">
+            <i class="fas fa-grip-lines-vertical"></i>
+            Khán<br />Đài
+          </div>
+          <div class="yard">
+            <div class="gate1">
+              Cổng
+              <i class="fas fa-torii-gate"></i>
             </div>
-            
 
+            <div class="main-yard">
+              <div class="yard1-2">
+                <div class="yard1">
+                  <div>Sân 1</div>
+                  <div class="select-yard">CHỌN SÂN</div>
+                  <i class="fas fa-futbol iconball"></i>
+                </div>
+                <div class="yard2">
+                  <div>Sân 2</div>
+                  <div class="select-yard">CHỌN SÂN</div>
+                  <i class="fas fa-futbol iconball"></i>
+                </div>
+              </div>
+              <div class="yard3-4">
+                <div class="yard3">
+                  <div>Sân 3</div>
+                  <div class="select-yard">CHỌN SÂN</div>
+                  <i class="fas fa-futbol iconball"></i>
+                </div>
+                <div class="yard4">
+                  <div>Sân 4</div>
+                  <div class="select-yard">CHỌN SÂN</div>
+                  <i class="fas fa-futbol iconball"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gate2">
+            <i class="fas fa-torii-gate"></i>
+            Cổng
+          </div>
         </div>
+      </div>
     </div>
     <div id="success">
-        <div class="success-popup">
-            <div class="head-success">
-                <i class="fas fa-times x"></i>
-            </div>
-            <div class="content-success">
-                <p>Đặt Lịch Thành Công!!!<i class="fas fa-check-circle"></i></p>
-                    <!-- <a class="pay" href="thanh-toan.html">Thanh Toán</a> -->
-                    
-            </div>
+      <div class="success-popup">
+        <div class="head-success">
+          <i class="fas fa-times x"></i>
         </div>
+        <div class="content-success">
+          <p>Đặt Lịch Thành Công!!!<i class="fas fa-check-circle"></i></p>
+          <!-- <a class="pay" href="thanh-toan.html">Thanh Toán</a> -->
+        </div>
+      </div>
     </div>
-    
+
     <script src="thue-san.js"></script>
-</body>
+  </body>
 </html>
