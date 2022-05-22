@@ -259,10 +259,14 @@ ul.home li .img-home img {
 .mid-content.load-money {
   background-color: #f1c40f;
 }
+.mid-content.infor-yard {
+  background-color: #95a5a6;
+}
 .head-diagram,
 .head-selection,
 .head-calendar,
 .head-load-money,
+.head-infor-yard,
 .head-profile {
   width: 100%;
   height: 10%;
@@ -276,6 +280,7 @@ ul.home li .img-home img {
 .main-diagram,
 .main-selection,
 .main-load-money,
+.main-infor-yard,
 .main-profile {
   width: 100%;
   height: 80%;
