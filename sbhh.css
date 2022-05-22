@@ -21,6 +21,7 @@ body {
   z-index: 1000000000;
   display: flex;
   margin: 0 auto;
+  border-bottom: 2px solid #ecf0f1;
 }
 .head-content {
   width: 1270px;
@@ -215,6 +216,16 @@ ul.home li .img-home img {
   padding: 30px 20px;
   box-shadow: 0px 0px 15px 8px #000000; /* x y blur scale color  */
 }
+#content-long {
+  display: flex;
+  justify-content: center;
+  width: 1270px;
+  height: 640px;
+  background-color: #2c3e50;
+  margin: 10px auto;
+  padding: 30px 20px;
+  box-shadow: 0px 0px 15px 8px #000000; /* x y blur scale color  */
+}
 .left-content {
   width: 600px;
   height: 580px;
@@ -288,6 +299,15 @@ ul.home li .img-home img {
   display: flex;
   background-color: #34495e;
   position: relative;
+}
+.infor {
+  color: #ecf0f1;
+  font-size: 20px;
+  margin: 10px 20px;
+  overflow: scroll;
+}
+.infor::-webkit-scrollbar {
+  width: 0;
 }
 .yard {
   display: block;
